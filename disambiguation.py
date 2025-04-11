@@ -29,22 +29,20 @@ class Disambiguator:
         top3 = matches.head(3)
 
         if auto:
-    logging.info("Disambiguation triggered in API mode.")
-    self.log_disambiguation(user_input, "API_Disambiguation",
-                            top3.iloc[0]["Emergency Type"],
-                            top3.iloc[1]["Emergency Type"] if len(top3) > 1 else "",
-                            top3.iloc[2]["Emergency Type"] if len(top3) > 2 else "",
-                            score_gap, top_score)
+            logging.info("Disambiguation triggered in API mode.")
+            self.log_disambiguation(user_input, "API_Disambiguation",
+                                    top3.iloc[0]["Emergency Type"],
+                                    top3.iloc[1]["Emergency Type"] if len(top3) > 1 else "",
+                                    top3.iloc[2]["Emergency Type"] if len(top3) > 2 else "",
+                                    score_gap, top_score)
 
-    # ✅ Return disambiguation prompt
-    return {
-        "disambiguation": True,
-        "options": top3["Emergency Type"].tolist(),
-        "message": "⚠️ Multiple possible emergencies detected. Please choose the best match:"
-    }
+            return {
+                "disambiguation": True,
+                "options": top3["Emergency Type"].tolist(),
+                "message": "⚠️ Multiple possible emergencies detected. Please choose the best match:"
+            }
 
-
-        # CLI Mode (run()) — user can select from numbered options
+        # CLI Mode (run()) — user selects from numbered options
         print("⚠️ Multiple possible emergencies detected. Please choose the best match:")
         for i, row in top3.iterrows():
             print(f"{i + 1}. {row['Emergency Type']}")
