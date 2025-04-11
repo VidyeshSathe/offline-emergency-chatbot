@@ -108,46 +108,50 @@ class Chatbot:
 
     def handle_query(self, user_input, feedback_override=None):
         if user_input.startswith("disambiguation:"):
-        label = user_input.split(":", 1)[1].strip()
-        match = self.df[self.df["Emergency Type"] == label]
-        if not match.empty:
-            row = match.iloc[0]
-            return {
-                "type": "normal",
-                "response": self.response_generator.render(row),
-                "feedback": True
-            }
-        else:
-            return {
-                "type": "fallback",
-                "response": "⚠️ Sorry, I couldn’t find that emergency in my database. Please try describing it again.",
-                "feedback": True
-            }
+            label = user_input.split(":", 1)[1].strip()
+            match = self.df[self.df["Emergency Type"] == label]
+            if not match.empty:
+                row = match.iloc[0]
+                return {
+                    "type": "normal",
+                    "response": self.response_generator.render(row),
+                    "feedback": True
+                }
+            else:
+                return {
+                    "type": "fallback",
+                    "response": "⚠️ Sorry, I couldn’t find that emergency in my database. Please try describing it again.",
+                    "feedback": True
+                }
+
         feedback_match = self.feedback_logger.find_feedback_match(user_input)
+
         if feedback_override:
             corrected = feedback_override.get("corrected")
             predicted = feedback_override.get("predicted")
             helpful = feedback_override.get("was_helpful")
+
             if helpful:
                 self.feedback_logger.log_feedback(user_input, predicted, was_helpful=True)
             else:
                 self.feedback_logger.log_feedback(user_input, predicted, was_helpful=False, confirmed_emergency=corrected)
-                if corrected != "None of the above":
-                    row = self.df[self.df["Emergency Type"] == corrected].iloc[0]
-                    return {
-                        "type": "normal",
-                        "response": self.response_generator.render(row),
-                        "feedback": True
-                    }
-                else:
-                    return {
-                        "type": "fallback",
-                        "response": "⚠️ This seems serious, but it's not in my database. Please contact emergency services.",
-                        "feedback": True
-                    }
-        
-            # NEW: return correction options if not provided yet
-            if corrected is None:
+
+                if corrected is not None:
+                    if corrected != "None of the above":
+                        row = self.df[self.df["Emergency Type"] == corrected].iloc[0]
+                        return {
+                            "type": "normal",
+                            "response": self.response_generator.render(row),
+                            "feedback": True
+                        }
+                    else:
+                        return {
+                            "type": "fallback",
+                            "response": "⚠️ This seems serious, but it's not in my database. Please contact emergency services.",
+                            "feedback": True
+                        }
+
+            if not helpful and corrected is None:
                 options = sorted(self.df["Emergency Type"].unique().tolist())
                 options.append("None of the above")
                 return {
@@ -156,7 +160,6 @@ class Chatbot:
                     "options": options,
                     "feedback": True
                 }
-
 
         if feedback_match == "NONE":
             return {
@@ -182,7 +185,7 @@ class Chatbot:
             return {
                 "type": "distress",
                 "response": (
-                    "🧡 It sounds like you’re in serious emotional distress.\n"
+                    "🦡 It sounds like you’re in serious emotional distress.\n"
                     "I'm just an offline assistant and can't provide direct help, but you are not alone.\n"
                     "Please speak with someone you trust or contact a local crisis support service.\n"
                     "If you're in danger, seek emergency help immediately."
@@ -243,7 +246,6 @@ class Chatbot:
 
         selected = self.disambiguator.resolve(matches, user_input, auto=not self.test_mode)
 
-        # ✅ If disambiguation is triggered, return structured object
         if isinstance(selected, dict) and selected.get("disambiguation"):
             return {
                 "type": "disambiguation",
@@ -251,7 +253,6 @@ class Chatbot:
                 "options": selected["options"],
                 "feedback": True
             }
-
 
         return {
             "type": "normal",
@@ -326,7 +327,6 @@ class Chatbot:
         import re
         match = re.search(r'🚨 Emergency Detected: (.+)', response_text)
         return match.group(1).strip() if match else "Unknown"
-
 
 if __name__ == "__main__":
     try:
