@@ -28,12 +28,21 @@ class Disambiguator:
             return matches.iloc[0]
 
         logging.info(f"Disambiguation triggered. Score gap = {score_gap:.4f}. Showing top 3 options.")
-
-        print("⚠️ Multiple possible emergencies detected. Please choose the best match:")
         top3 = matches.head(3)
+
+        if auto:
+            # In API mode — return None to trigger disambiguation UI on frontend
+            self.log_disambiguation(user_input, "API_Disambiguation",
+                                    top3.iloc[0]["Emergency Type"],
+                                    top3.iloc[1]["Emergency Type"] if len(top3) > 1 else "",
+                                    top3.iloc[2]["Emergency Type"] if len(top3) > 2 else "",
+                                    score_gap, top_score)
+            return None
+
+        # Local/CLI fallback
+        print("⚠️ Multiple possible emergencies detected. Please choose the best match:")
         for i, row in top3.iterrows():
             print(f"{i+1}. {row['Emergency Type']}")
-
         print(f"{len(top3)+1}. None of these – I’ll try again if you describe it differently.")
 
         choice = input(f"Select 1-{len(top3)+1}: ").strip()
@@ -69,6 +78,3 @@ class Disambiguator:
             writer.writerow([
                 user_input, choice, top1, top2, top3, f"{score_gap:.4f}", f"{top_score:.4f}"
             ])
-
-
-
