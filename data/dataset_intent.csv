@@ -1,0 +1,1337 @@
+Phrase,Intent
+need cpr steps quick,emergency
+how perform cpr adult,emergency
+baby chokin cant breath,emergency
+heimlich manoeuvre help,emergency
+bleeding lot from cut,emergency
+stop heavy bleed pressure,emergency
+bad burn hand boiling water,emergency
+3rd degree burn what do,emergency
+think arm broken fell hard,emergency
+splint fractured leg,emergency
+twisted ankle bad swell pain,emergency
+rice method sprain,emergency
+hit head feel sick dizzy,emergency
+concussion signs check,emergency
+freezing cold shivering cant stop,emergency
+hypothermia help warm up,emergency
+pale cold clammy skin shock?,emergency
+treat shock lay down,emergency
+swallowed poison need help,emergency
+poison control contact now,emergency
+chemical splash eye rinse now,emergency
+got something in eye pain,emergency
+bee sting allergic reaction swelling,emergency
+anaphylaxis epipen use fast,emergency
+pulled from water not breathing,emergency
+drowning first aid start,emergency
+black eye pain swelling hit,emergency
+treat black eye cold pack,emergency
+huge blister foot pain,emergency
+care for popped blister,emergency
+big bruise leg throbbing,emergency
+bruise getting larger dark,emergency
+dog bite broke skin bleeding,emergency
+animal bite clean wound,emergency
+allergic reaction throat tight,emergency
+severe allergy use epipen,emergency
+heatstroke collapse outside hot,emergency
+cool down heatstroke victim fast,emergency
+seizure shaking floor help,emergency
+protect head during seizure,emergency
+nosebleed wont stop after 15 min,emergency
+heavy nose bleed how stop,emergency
+frostbite fingers numb white look,emergency
+rewarm frostbite gently,emergency
+baby high fever over 104f,emergency
+fever adult confusion stiff neck,emergency
+shoulder looks out place dislocated,emergency
+dislocation pain intense cant move,emergency
+fainted fell down recovery,emergency
+passed out woke up quick,emergency
+food poisoning symptoms vomit diarrhea,emergency
+ate bad food feel awful,emergency
+stomach bug bad cramps dehydration,emergency
+gastroenteritis fluids important,emergency
+worst headache ever sudden,emergency
+migraine light hurts head pound,emergency
+heart attack chest pain left arm,emergency
+crushing chest pain call 000,emergency
+heat cramps intense muscle pain,emergency
+stop heat cramps hydrate stretch,emergency
+sharp chest pain breathing in,emergency
+pain chest when move or cough,emergency
+chemical burn skin flush water,emergency
+acid burn rinse long time,emergency
+motion sickness feel sick car,emergency
+travel sickness help prevent,emergency
+stepped on nail puncture wound foot,emergency
+deep cut rusty metal tetanus?,emergency
+hi hows it goin?,non_emergency
+what time is it in Bentley?,non_emergency
+tell me a joke please,non_emergency
+whats the weather like outside now?,non_emergency
+who won the footy last night?,non_emergency
+can you recommend a good cafe nearby?,non_emergency
+how do i get to the city from here?,non_emergency
+open google maps,non_emergency
+search for pictures of quokkas,non_emergency
+what's the capital of Western Australia?,non_emergency
+play some relaxing music,non_emergency
+set a timer for 20 minutes,non_emergency
+add bread and milk to shopping list,non_emergency
+what movies are showing at Hoyts?,non_emergency
+how tall is the Bell Tower?,non_emergency
+translate 'thank you' to French,non_emergency
+whats 15 percent of 80 dollars?,non_emergency
+define 'ubiquitous',non_emergency
+how does wifi work?,non_emergency
+my computer is running really slow,non_emergency
+how to take a screenshot on windows,non_emergency
+my phone battery drains too quickly,non_emergency
+cant connect to bluetooth speaker,non_emergency
+forgot my wifi password how find,non_emergency
+printer says offline help,non_emergency
+how to clear browser cache chrome,non_emergency
+is this website safe to use?,non_emergency
+install software from usb drive,non_emergency
+what does 'error 404' mean?,non_emergency
+how to update my operating system?,non_emergency
+keyboard not typing letters,non_emergency
+internet keeps dropping out fix,non_emergency
+setup email on android phone,non_emergency
+my favourite app keeps crashing,non_emergency
+what is cloud storage explain simply,non_emergency
+mouse pointer frozen on screen,non_emergency
+recommend good antivirus software free,non_emergency
+change desktop background image,non_emergency
+how to make password stronger,non_emergency
+what is a phishing scam look like,non_emergency
+uninstall program windows 10,non_emergency
+webcam not detected windows,non_emergency
+why are my photos blurry on phone,non_emergency
+manage app notifications settings,non_emergency
+setup new laptop first time,non_emergency
+speakers not working no sound,non_emergency
+whats your favorite color ai,non_emergency
+do you like listening to music?,non_emergency
+tell me about yourself bot,non_emergency
+are you always learning?,non_emergency
+whats the most interesting fact you know?,non_emergency
+can robots have feelings?,non_emergency
+just saying hello there,non_emergency
+good morning hope its nice day,non_emergency
+testing if you are working,non_emergency
+blah blah blah,non_emergency
+random input text string,non_emergency
+how was your day?,non_emergency
+can you write a poem?,non_emergency
+tell me a fun fact about space,non_emergency
+what are kangaroos known for?,non_emergency
+how many planets in solar system?,non_emergency
+who painted the Mona Lisa?,non_emergency
+what is the longest river in australia?,non_emergency
+find directions to Cottesloe Beach,non_emergency
+recipe for simple pasta sauce,non_emergency
+book recommendation fiction,non_emergency
+latest news headlines australia,non_emergency
+turn down the volume please,non_emergency
+cancel my last reminder,non_emergency
+whats on my schedule tomorrow?,non_emergency
+start a 1 hour timer,non_emergency
+send text message to mum 'running late',non_emergency
+what year is it?,non_emergency
+how many days until christmas?,non_emergency
+is today a public holiday in WA?,non_emergency
+find a nearby pizza place,non_emergency
+what currency is used in indonesia?,non_emergency
+how far is Perth from Sydney by plane?,non_emergency
+main ingredients in scrambled eggs,non_emergency
+show me cute cat videos,non_emergency
+what is the chemical symbol for water?,non_emergency
+history of the internet brief,non_emergency
+whats playing on ABC TV tonight?,non_emergency
+how do airplanes fly basics?,non_emergency
+what is blockchain technology simple,non_emergency
+tell me about the great barrier reef location,non_emergency
+how do i connect my phone to car bluetooth?,non_emergency
+my laptop is overheating what to do,non_emergency
+how reset forgotten phone pin,non_emergency
+troubleshoot noisy computer fan,non_emergency
+best way to backup photos online,non_emergency
+screen brightness keeps changing auto,non_emergency
+how manage startup programs windows 11,non_emergency
+fix microphone not working pc,non_emergency
+my phone wont charge properly,non_emergency
+export bookmarks from chrome,non_emergency
+what is two factor authentication?,non_emergency
+turn off notifications specific app,non_emergency
+help setting up new printer wireless,non_emergency
+external hard drive clicking noise,non_emergency
+how to check internet speed,non_emergency
+thank you for your help,non_emergency
+appreciate the assistance,non_emergency
+goodbye for now,non_emergency
+talk soon bye,non_emergency
+i feel weird dunno why,vague_emergency
+something feels off today,vague_emergency
+just not feeling 100 percent,vague_emergency
+got this strange sensation,vague_emergency
+he looks a bit pale,vague_emergency
+she seems really tired suddenly,vague_emergency
+feeling generally blah unwell,vague_emergency
+a bit dizzy when i stand up,vague_emergency
+lightheaded woozy feeling,vague_emergency
+my head feels foggy cant think,vague_emergency
+shaky hands for no reason,vague_emergency
+clammy skin cold sweat,vague_emergency
+need help quick situation developing,vague_emergency
+urgent assistance required unknown issue,vague_emergency
+its bad here need advice,vague_emergency
+problem need help cant explain,vague_emergency
+feeling faint like i might pass out,vague_emergency
+weakness came over me suddenly,vague_emergency
+my body feels heavy strange,vague_emergency
+eyes look glassy unfocused,vague_emergency
+not acting like himself confused?,vague_emergency
+slight shaking tremor,vague_emergency
+feeling breathless mild exertion,vague_emergency
+stomach feels uneasy queasy,vague_emergency
+nauseous feeling might be sick,vague_emergency
+sudden overwhelming fatigue,vague_emergency
+feel completely drained exhausted,vague_emergency
+balance feels off unsteady,vague_emergency
+vision bit fuzzy around edges,vague_emergency
+hard to focus eyes mind,vague_emergency
+general unwell feeling achey,vague_emergency
+slight aches pains all over,vague_emergency
+run down feeling sick maybe,vague_emergency
+somethings wrong physically,vague_emergency
+this weird feeling persists,vague_emergency
+he seems confused disoriented,vague_emergency
+slurring words slightly noticeable,vague_emergency
+her skin feels cold to touch,vague_emergency
+cant explain need help fast urgent?,vague_emergency
+this might be an emergency not sure,vague_emergency
+situation seems critical maybe?,vague_emergency
+help needed urgent unspecified problem,vague_emergency
+feeling worse rapidly,vague_emergency
+something feels unbalanced inside,vague_emergency
+this doesnt feel right normal,vague_emergency
+im worried its serious,vague_emergency
+need medical input vague symptoms,vague_emergency
+responsive but seems out of it,vague_emergency
+breathing seems shallow rapid,vague_emergency
+just feel really odd strange,vague_emergency
+got a weird pressure headache,vague_emergency
+feeling shaky jittery inside,vague_emergency
+need assistance unclear whats wrong,vague_emergency
+situation developing guidance needed,vague_emergency
+im not feeling myself at all,vague_emergency
+very tired weak muscles feel like lead,vague_emergency
+odd sensation chest flutter light pressure,vague_emergency
+feeling hot then cold chills?,vague_emergency
+limbs feel heavy unresponsive,vague_emergency
+general malaise fatigue ache,vague_emergency
+cant describe it just feel bad,vague_emergency
+he groaned looks uncomfortable,vague_emergency
+she looks like she might faint,vague_emergency
+im dizzy spells intermittent,vague_emergency
+need help now dont know cause,vague_emergency
+assistance required situation unclear urgent,vague_emergency
+cpr compressions rate adult,emergency
+choking conscious adult heimlich,emergency
+bleeding control deep cut pressure,emergency
+burn major skin damage cool cover,emergency
+fracture immobilise limb check circulation,emergency
+sprained ankle RICE treatment,emergency
+concussion symptoms memory loss confusion,emergency
+hypothermia severe shivering stops confusion,emergency
+shock signs rapid pulse cold skin,emergency
+poison ingestion urgent action call 000,emergency
+eye chemical splash flush water 15 mins,emergency
+insect sting anaphylaxis risk use epipen,emergency
+drowning unresponsive check breathing cpr,emergency
+black eye vision check rule out damage,emergency
+burn blister popped how manage,emergency
+bruise pain swelling cold compress,emergency
+animal bite risk infection clean seek help,emergency
+severe allergic reaction call 000 use epipen,emergency
+heatstroke cool victim rapidly emergency,emergency
+seizure protect from injury dont restrain,emergency
+nose bleed persistent tilt forward pinch,emergency
+frostbite rewarm slowly avoid direct heat,emergency
+high fever child seizure history urgent care,emergency
+dislocated joint obvious deformity severe pain,emergency
+fainting recovery position if unresponsive,emergency
+food poisoning severe vomiting dehydration risk,emergency
+gastroenteritis replace fluids oral rehydration,emergency
+severe headache sudden onset worst ever,emergency
+heart attack symptoms call ambulance immediately,emergency
+heat cramps stop exercise cool down hydrate,emergency
+chest pain associated breathing difficulty call 000,emergency
+chemical burn remove contaminated clothing flush skin,emergency
+motion sickness persistent vomiting dehydration,emergency
+puncture wound foreign body embedded medical help,emergency
+cpr steps for child,emergency
+choking infant conscious back blows chest thrusts,emergency
+stop bleeding wound elevate limb apply pressure,emergency
+treat minor burn cool water cover,emergency
+suspect broken bone dont move limb,emergency
+ankle sprain how wrap bandage,emergency
+hit head headache nausea monitor symptoms,emergency
+signs hypothermia slurred speech drowsiness,emergency
+first aid shock keep warm reassure,emergency
+what to do if someone swallows poison,emergency
+eye injury remove loose object carefully flush,emergency
+spider bite pain redness swelling monitor,emergency
+water rescue safety throw dont go,emergency
+black eye ice pack reduce swelling,emergency
+blister painful friction care,emergency
+bruise large deep pain check doctor?,emergency
+cat bite antibiotics often needed,emergency
+food allergy symptoms hives swelling itching,emergency
+heat exhaustion cool environment rest fluids,emergency
+seizure first aid guide safe position,emergency
+nosebleed heavy bleeding medical advice?,emergency
+frostbite treatment avoid rubbing skin,emergency
+fever medication dosage adults children,emergency
+dislocation emergency room needed reduction,emergency
+fainting causes prevention stay hydrated,emergency
+food poisoning prevent cross contamination,emergency
+gastroenteritis contagious wash hands well,emergency
+migraine treatment medication rest dark room,emergency
+heart attack chest pressure shortness breath,emergency
+heat cramps electrolyte drink helps,emergency
+chest pain could be muscle strain?,emergency
+acid burn first aid rinse water,emergency
+prevent motion sickness look horizon,emergency
+puncture wound clean cover tetanus check,emergency
+what is the time difference between Perth and Sydney?,non_emergency
+find a recipe for chicken soup,non_emergency
+tell me about the history of computers,non_emergency
+how do i change my desktop wallpaper?,non_emergency
+my phone is making a weird noise,non_emergency
+what is the capital of france?,non_emergency
+can you play chess?,non_emergency
+tell me a fun fact about dolphins,non_emergency
+how to tie a bow tie,non_emergency
+whats the score of the cricket match?,non_emergency
+find directions to the nearest library,non_emergency
+convert 100 kilometers to miles,non_emergency
+play some upbeat pop music,non_emergency
+set reminder check email 9am,non_emergency
+add cheese to my grocery list,non_emergency
+what's today's date?,non_emergency
+how many days left in april?,non_emergency
+who wrote 'To Kill a Mockingbird'?,non_emergency
+define 'ephemeral',non_emergency
+how does solar power work?,non_emergency
+my laptop screen is flickering,non_emergency
+how to connect printer to wifi,non_emergency
+my account got hacked need help,non_emergency
+forgot pattern lock android phone,non_emergency
+best way to clean eyeglasses,non_emergency
+troubleshoot slow macbook performance,non_emergency
+how to update graphics card driver,non_emergency
+is this email a scam?,non_emergency
+clear download history firefox,non_emergency
+how to setup dual monitors windows,non_emergency
+my keyboard keys are sticky,non_emergency
+fix 'no internet connection' error,non_emergency
+configure mail app iphone,non_emergency
+why does my game keep lagging?,non_emergency
+explain what an IP address is,non_emergency
+best free video editing software?,non_emergency
+mouse keeps disconnecting wireless,non_emergency
+recommend good password manager,non_emergency
+how to take scrolling screenshot,non_emergency
+uninstall java development kit,non_emergency
+webcam image upside down fix,non_emergency
+transfer files android to pc,non_emergency
+manage storage space phone full,non_emergency
+setup voicemail on mobile,non_emergency
+speakers crackling sound pc,non_emergency
+what do you think about the weather?,non_emergency
+are you sentient ai?,non_emergency
+tell me about your training data,non_emergency
+do you dream electric sheep?,non_emergency
+what's your favorite movie genre?,non_emergency
+can ai feel empathy?,non_emergency
+just saying hi again,non_emergency
+good evening how are things,non_emergency
+test test 123,non_emergency
+random characters asdfjkl,non_emergency
+this is just a test message,non_emergency
+how are you doing today bot?,non_emergency
+can you write a short story?,non_emergency
+tell me about black holes simplified,non_emergency
+what is the population of Bentley WA?,non_emergency
+how many states in australia?,non_emergency
+who discovered penicillin?,non_emergency
+what is the highest mountain in the world?,non_emergency
+find directions to Perth Zoo,non_emergency
+recipe for banana bread easy,non_emergency
+book recommendation non fiction,non_emergency
+latest world news summary,non_emergency
+increase screen brightness,non_emergency
+cancel timer i set earlier,non_emergency
+what appointments do i have today?,non_emergency
+start stopwatch now,non_emergency
+send email to boss 'working from home',non_emergency
+what season is it now in Perth?,non_emergency
+how many weeks until June?,non_emergency
+is kings park open now?,non_emergency
+find chinese restaurant nearby delivery,non_emergency
+what currency is used in japan?,non_emergency
+how long does it take drive Perth to Margaret River?,non_emergency
+main ingredients in pizza dough,non_emergency
+show me images of sunsets,non_emergency
+what is chemical symbol for gold?,non_emergency
+history of rock and roll music,non_emergency
+what tv shows are popular now?,non_emergency
+how do satellites stay in orbit?,non_emergency
+what is artificial intelligence explained,non_emergency
+tell me about Rottnest Island,non_emergency
+how do i sync my google calendar?,non_emergency
+my pc wont boot up black screen,non_emergency
+how reset apple id password,non_emergency
+troubleshoot microphone not working zoom,non_emergency
+best way backup iphone photos,non_emergency
+automatically adjust screen brightness turn off,non_emergency
+manage privacy settings facebook,non_emergency
+fix sound delay bluetooth headphones,non_emergency
+my phone overheating when charging,non_emergency
+import bookmarks to firefox,non_emergency
+what is multi factor authentication?,non_emergency
+turn off read receipts whatsapp,non_emergency
+help setting up smart tv wifi,non_emergency
+external ssd not showing up mac,non_emergency
+how check network latency ping,non_emergency
+thanks that was helpful,non_emergency
+ok got it thanks,non_emergency
+good talking to you bye,non_emergency
+see ya later alligator,non_emergency
+feeling bit off not sure why,vague_emergency
+something isnt right feel strange,vague_emergency
+just generally under the weather,vague_emergency
+this weird feeling came over me,vague_emergency
+he looks unwell pale sweaty,vague_emergency
+she seems weak lacking energy,vague_emergency
+feeling malaise general discomfort,vague_emergency
+dizzy spells when moving head,vague_emergency
+lightheadedness comes and goes,vague_emergency
+brain fog cant focus thoughts jumbled,vague_emergency
+hands shaking slightly trembling,vague_emergency
+skin feels clammy cold touch,vague_emergency
+urgent help needed cant specify problem,vague_emergency
+emergency situation unfolding need guidance,vague_emergency
+its getting bad need help now,vague_emergency
+problem here advice needed asap,vague_emergency
+feel like i might faint pass out,vague_emergency
+sudden weakness arms legs heavy,vague_emergency
+my body feels weird alien,vague_emergency
+eyes look distant unfocused strange,vague_emergency
+acting confused doesnt know day,vague_emergency
+slight tremor noticeable in voice,vague_emergency
+short of breath mild activity unusual,vague_emergency
+stomach churning nausea feeling sick,vague_emergency
+persistent nausea cant shake it,vague_emergency
+overwhelming tiredness cant stay awake,vague_emergency
+feel utterly exhausted no reason,vague_emergency
+balance unsteady risk of falling,vague_emergency
+vision blurry transient comes goes,vague_emergency
+difficulty reading focus blurred text,vague_emergency
+general unwellness achey joints muscles,vague_emergency
+flu like symptoms aches chills,vague_emergency
+feel rundown like im getting sick,vague_emergency
+something physically wrong i sense it,vague_emergency
+strange sensation wont go away,vague_emergency
+he seems disoriented confused location,vague_emergency
+slurring words difficulty articulating,vague_emergency
+her hands feel abnormally cold,vague_emergency
+cant explain well need help fast urgency,vague_emergency
+potential emergency situation advice needed,vague_emergency
+situation seems serious need input,vague_emergency
+urgent unspecified problem requires help,vague_emergency
+feeling rapidly worse need intervention,vague_emergency
+internal feeling of imbalance wrongness,vague_emergency
+this is not normal for me,vague_emergency
+im scared something serious happening,vague_emergency
+request medical advice vague issue,vague_emergency
+conscious but slow response confused state,vague_emergency
+breathing pattern changed shallow uneven,vague_emergency
+just feel very peculiar odd,vague_emergency
+strange headache pressure not pain,vague_emergency
+feeling jittery anxious heart racing?,vague_emergency
+need assistance symptoms unclear problem,vague_emergency
+situation developing need expert guidance,vague_emergency
+i dont feel like myself physically,vague_emergency
+extreme fatigue muscle weakness profound,vague_emergency
+odd chest sensation not pain but pressure,vague_emergency
+feeling chills then sweating fever?,vague_emergency
+limbs feel heavy numb tingling,vague_emergency
+overall malaise tiredness body aches,vague_emergency
+cant put my finger on it just feel very bad,vague_emergency
+he looks uncomfortable distressed,vague_emergency
+she looks pale about to faint,vague_emergency
+dizzy spells getting more frequent,vague_emergency
+need help immediately cause unknown,vague_emergency
+urgent assistance needed problem unclear,vague_emergency
+cpr hand placement adult chest,emergency
+choking pregnant woman alternative thrusts,emergency
+bleeding wound apply sterile dressing pressure,emergency
+burn chemical flush eyes immediate 15 min,emergency
+fracture open bone visible cover wound call 000,emergency
+sprain RICE therapy instructions detailed,emergency
+concussion signs worsening headache vomiting call 000,emergency
+hypothermia severe unresponsive emergency,emergency
+shock treatment lay flat keep warm monitor,emergency
+poisoning suspected call poison info centre or 000,emergency
+eye injury foreign object embedded do not remove,emergency
+anaphylaxis symptoms throat swelling difficulty breathing,emergency
+drowning rescue breathing cpr if needed,emergency
+black eye severe pain vision loss go hospital,emergency
+blister care keep clean protect infection,emergency
+bruise signs internal bleeding large area firm,emergency
+animal bite seek medical advice rabies tetanus,emergency
+epipen administration thigh hold 10 seconds,emergency
+heatstroke urgent cooling call ambulance,emergency
+seizure stay with person time duration,emergency
+nosebleed persistent severe seek medical help,emergency
+frostbite gentle rewarming medical assessment needed,emergency
+fever very high in infant see doctor asap,emergency
+dislocation obvious deformity immobilise seek help,emergency
+fainting if injury occurs during fall check,emergency
+food poisoning dehydration severe symptoms hospital,emergency
+gastroenteritis prevent spread good hygiene,emergency
+headache sudden severe worst ever call 000,emergency
+heart attack chest pain other symptoms call 000,emergency
+heat cramps move cool place drink fluids,emergency
+chest pain rule out heart attack first,emergency
+chemical burn identify chemical flush long time,emergency
+motion sickness dehydration risk if vomiting persists,emergency
+puncture wound check for retained foreign body,emergency
+infant cpr compression depth technique,emergency
+choking conscious baby back blows chest thrusts,emergency
+stop bleeding direct pressure keep pressing,emergency
+burn first aid cool running water 20 mins,emergency
+broken bone splinting principles support above below,emergency
+ankle sprain grade severity symptoms,emergency
+head injury monitor consciousness level closely,emergency
+hypothermia prevention dressing layers avoiding wet,emergency
+shock symptoms recognition pale cool clammy weak pulse,emergency
+poisonous plant ingestion identify plant call poison control,emergency
+eye injury blunt trauma pain vision changes seek help,emergency
+insect sting remove stinger wash apply cold pack,emergency
+water safety supervision fences life jackets,emergency
+black eye associated symptoms headache vision change,emergency
+friction blister prevention proper fitting shoes socks,emergency
+bruise unexplained large frequent see doctor,emergency
+dog bite wound care cleaning dressing antibiotics?,emergency
+allergy severe reaction symptoms progression,emergency
+heat exhaustion vs heatstroke symptoms difference,emergency
+seizure types recognition first aid varies,emergency
+nosebleed causes trauma dry air medication,emergency
+frostbite prevention warm dry clothing limit exposure,emergency
+fever management medication hydration monitoring,emergency
+dislocation common joints shoulder finger patella,emergency
+fainting triggers standing long heat dehydration,emergency
+food poisoning common bacteria salmonella campylobacter,emergency
+gastroenteritis viral common cause norovirus rotavirus,emergency
+headache tension type stress related treatment,emergency
+heart attack risk factors modification lifestyle changes,emergency
+heat cramps electrolyte loss replace fluids salts,emergency
+chest pain causes cardiac non cardiac,emergency
+chemical burn specific agent treatment varies sds,emergency
+motion sickness prevention medication options,emergency
+puncture wound tetanus booster required?,emergency
+what time is sunset tonight in Bentley?,non_emergency
+is anything open late around here?,non_emergency
+tell me a story about space travel,non_emergency
+how to make pancakes from scratch,non_emergency
+my wifi signal seems weak,non_emergency
+whats the population of australia 2025?,non_emergency
+can you recommend a podcast?,non_emergency
+tell me a fun fact about Western Australia,non_emergency
+how to change a car tire,non_emergency
+whats the latest AFL score?,non_emergency
+find directions to Curtin University library,non_emergency
+convert 50 US dollars to AUD,non_emergency
+play some classic rock music,non_emergency
+set reminder pay rent tomorrow morning,non_emergency
+add toilet paper to the shopping list,non_emergency
+is tomorrow a public holiday april 11 2025?,non_emergency
+how many days until the weekend?,non_emergency
+who directed the movie inception?,non_emergency
+define 'serendipity',non_emergency
+how do electric cars work battery motor?,non_emergency
+my laptop is making a clicking noise,non_emergency
+how to connect airpods to windows laptop,non_emergency
+my instagram account was disabled,non_emergency
+forgot screen time passcode iphone,non_emergency
+best way to clean tv screen,non_emergency
+troubleshoot macbook running hot,non_emergency
+how to check computer specs windows,non_emergency
+is this software download safe virus?,non_emergency
+delete search history google chrome,non_emergency
+how to extend display to second monitor,non_emergency
+keyboard typing wrong characters settings?,non_emergency
+fix slow loading websites,non_emergency
+setup icloud email on android,non_emergency
+why does my phone keep restarting?,non_emergency
+explain what RAM does computer,non_emergency
+best free cloud backup service?,non_emergency
+mouse cursor jumping erratically,non_emergency
+recommend free antivirus for mac,non_emergency
+how take long screenshot android,non_emergency
+uninstall adobe creative cloud,non_emergency
+camera not working on laptop lenovo,non_emergency
+transfer photos iphone to pc windows 11,non_emergency
+manage app permissions android phone,non_emergency
+setup new smart watch guide,non_emergency
+fix no sound hdmi connection tv,non_emergency
+what do you think of thunderstorms?,non_emergency
+are you self aware?,non_emergency
+tell me about large language models,non_emergency
+do you experience time?,non_emergency
+whats your favorite book genre?,non_emergency
+can ai understand sarcasm?,non_emergency
+just saying hello evening,non_emergency
+good evening bot hope you are well,non_emergency
+test message ignore,non_emergency
+12345 abcde,non_emergency
+just seeing if you reply,non_emergency
+hows the system running tonight?,non_emergency
+can you generate some code python?,non_emergency
+tell me about the planet mars,non_emergency
+what are the current fuel prices in Perth?,non_emergency
+how many universities in Perth?,non_emergency
+who invented the telephone?,non_emergency
+what is the highest waterfall in the world?,non_emergency
+find directions to Perth airport,non_emergency
+recipe for roast chicken easy,non_emergency
+book recommendation thriller novel,non_emergency
+latest international news summary,non_emergency
+increase music volume,non_emergency
+delete the alarm i set for morning,non_emergency
+what meetings do i have next week?,non_emergency
+reset stopwatch timer,non_emergency
+send slack message to team 'leaving now',non_emergency
+what is the date next thursday?,non_emergency
+how many hours until 9am tomorrow?,non_emergency
+is the Bentley library open on weekends?,non_emergency
+find thai restaurant near carousel,non_emergency
+what currency is used in the uk?,non_emergency
+how long does it take fly Perth to London?,non_emergency
+main ingredients in mayonnaise,non_emergency
+show me pictures of australian birds,non_emergency
+what is chemical symbol for oxygen?,non_emergency
+history of photography timeline,non_emergency
+what reality tv shows are trending?,non_emergency
+how do gps satellites work?,non_emergency
+what is machine learning explained simply,non_emergency
+tell me about the Pinnacles desert WA,non_emergency
+how do i share my google drive files?,non_emergency
+my macbook wont turn on startup chime?,non_emergency
+how reset icloud password security questions,non_emergency
+troubleshoot webcam blurry image,non_emergency
+best way backup contacts iphone,non_emergency
+turn off auto brightness windows 11,non_emergency
+manage location settings google maps,non_emergency
+fix crackling audio pc speakers,non_emergency
+my android phone overheating bad,non_emergency
+export passwords from chrome browser,non_emergency
+what is phishing vs spear phishing?,non_emergency
+turn off autocorrect keyboard settings,non_emergency
+help connecting sonos speaker to wifi,non_emergency
+usb drive needs formatting error,non_emergency
+how check internet upload speed,non_emergency
+no worries thanks,non_emergency
+ok cool,non_emergency
+catch you later then,non_emergency
+have a good night,non_emergency
+just feeling generally off sickish,vague_emergency
+something feels very wrong inside,vague_emergency
+cant specify it just unwell,vague_emergency
+sudden wave of weakness fatigue,vague_emergency
+head feels weird light dizzy,vague_emergency
+vision slightly blurred cant focus,vague_emergency
+breaking out in sweat cold,vague_emergency
+skin feels damp cool clammy,vague_emergency
+cant take deep breath feeling short,vague_emergency
+chest discomfort pressure tightness strange,vague_emergency
+heart flutter racing feeling anxious,vague_emergency
+overwhelming sense panic impending doom,vague_emergency
+mind feels foggy confused cant think,vague_emergency
+speech slurred difficulty finding words,vague_emergency
+numbness tingling sensation spreading,vague_emergency
+weakness heaviness one side body,vague_emergency
+severe abdominal pain sudden griping,vague_emergency
+vomiting uncontrollably bile maybe,vague_emergency
+severe diarrhea risk dehydration,vague_emergency
+seeing blood in vomit emergency?,vague_emergency
+dark sticky stool concerning sign,vague_emergency
+extreme thirst mouth very dry,vague_emergency
+havent passed urine hours,vague_emergency
+sudden unexplained swelling legs face,vague_emergency
+skin itchy hives rash spreading,vague_emergency
+persistent cough mucus maybe blood,vague_emergency
+difficulty swallowing feels blocked,vague_emergency
+back pain intense shooting nerve?,vague_emergency
+cant feel feet numbness rising,vague_emergency
+feeling disconnected from surroundings strange,vague_emergency
+visual disturbances flashing lights zigzags,vague_emergency
+hearing strange noises buzzing ringing,vague_emergency
+thoughts very disturbed agitated paranoid,vague_emergency
+feeling extremely sad suicidal thoughts need help,vague_emergency
+malaise feeling unwell weak tired,vague_emergency
+pain intense sudden sharp internal?,vague_emergency
+need urgent medical advice vague symptoms bad,vague_emergency
+body signals something seriously wrong,vague_emergency
+level consciousness dropping drowsy unresponsive,vague_emergency
+head pounding pressure intense,vague_emergency
+sudden partial vision loss eye,vague_emergency
+extreme light sensitivity photophobia,vague_emergency
+neck stiff fever headache meningitis?,vague_emergency
+muscle weakness getting worse cant stand,vague_emergency
+pins needles whole body strange,vague_emergency
+sudden loss coordination balance falling,vague_emergency
+cant remember basic info confused memory loss,vague_emergency
+strange taste metallic chemical breath,vague_emergency
+skin bluish grey color lips nails,vague_emergency
+cold sweat nausea feeling faint,vague_emergency
+sense impending collapse feeling weak,vague_emergency
+cognitive function impaired slow confused,vague_emergency
+panic attack symptoms chest pain cant breathe,vague_emergency
+emergency help unknown cause serious,vague_emergency
+assess symptoms vague but concerning,vague_emergency
+person confused agitated acting strange,vague_emergency
+pupils fixed dilated unresponsive light,vague_emergency
+involuntary jerking limbs twitching face,vague_emergency
+shaking rigors intense chills,vague_emergency
+found collapsed on floor unresponsive,vague_emergency
+"He's not breathing, need CPR instructions!",emergency
+How to do CPR on an adult?,emergency
+"Baby stopped breathing, what do I do?",emergency
+Need help with chest compressions for a child.,emergency
+He collapsed and has no pulse.,emergency
+Should I start CPR?,emergency
+Instructions for infant CPR quick!,emergency
+Adult CPR steps needed now.,emergency
+Is rescue breathing needed for CPR currently?,emergency
+How deep for chest compressions on a baby?,emergency
+CPR tutorial needed urgently.,emergency
+"Someone is unresponsive, might need CPR assistance.",emergency
+Tell me how to perform cardiopulmonary resuscitation.,emergency
+"Pulse check failed, starting compressions.",emergency
+Emergency CPR guide requested.,emergency
+"Help, someone is choking!",emergency
+How to help a choking adult?,emergency
+My baby is choking on something small.,emergency
+Heimlich maneuver instructions now!,emergency
+What to do if someone is choking and unconscious?,emergency
+Infant choking first aid steps.,emergency
+"Can't breathe, choking badly!",emergency
+How to clear airway for choking child?,emergency
+Back blows for choking baby technique?,emergency
+He's conscious but can't cough or speak - indicates choking.,emergency
+Emergency choking steps required.,emergency
+Choking rescue guide needed immediately.,emergency
+What if the Heimlich maneuver doesn't work?,emergency
+Unconscious choking person procedure please.,emergency
+"He's turning blue, choking!",emergency
+Severe bleeding from arm wound!,emergency
+How to stop heavy bleeding quickly?,emergency
+Applying pressure but blood keeps coming through.,emergency
+Need tourniquet instructions urgently - is it appropriate?,emergency
+"Possible cut artery, bleeding fast.",emergency
+Help control this hemorrhage now.,emergency
+"Deep cut, losing a lot of blood.",emergency
+What to do for uncontrolled bleeding?,emergency
+The bleeding won't stop from the wound.,emergency
+Pressure dressing guide needed fast.,emergency
+Nosebleed is gushing blood uncontrollably.,emergency
+"Wound care for heavy, active bleeding.",emergency
+Is this arterial bleeding spurting?,emergency
+"Massive blood loss occurring, need help.",emergency
+How to manage severe hemorrhage?,emergency
+Severe burn on hand from boiling water.,emergency
+How to treat a bad burn immediately?,emergency
+Burn looks white and charred - suspect 3rd degree?,emergency
+"Large burn area on leg, what steps to take?",emergency
+"Chemical burn on skin, requires immediate action!",emergency
+Electrical burn treatment needed.,emergency
+What degree burn is this? Large blisters forming rapidly.,emergency
+First aid for serious burns now.,emergency
+"Scalding liquid burn, very painful area.",emergency
+Emergency burn care instructions required.,emergency
+"Clothing caught fire, extensive skin burns.",emergency
+Treating widespread second-degree burns.,emergency
+"Facial burn, need urgent advice for eyes/airway.",emergency
+Burn treatment for third-degree injury.,emergency
+"Cooling a major burn, how long?",emergency
+I think my leg is broken after the fall.,emergency
+How to tell if a bone is fractured? Severe pain here.,emergency
+Fell and heard a definite snap in my arm.,emergency
+Immobilizing a suspected fracture guide.,emergency
+"Compound fracture visible, bone sticking out!",emergency
+First aid for broken bone required.,emergency
+How to make an emergency splint for broken limb.,emergency
+"Child fell from height, possible broken wrist or arm.",emergency
+"Severe pain after impact, could be fracture.",emergency
+How to support a broken collarbone safely?,emergency
+Hip fracture suspected in elderly person after fall.,emergency
+"Crushed finger in door, is it broken?",emergency
+Signs of a skull fracture to watch for?,emergency
+Transporting someone with a likely broken leg.,emergency
+Possible stress fracture causing intense pain.,emergency
+"Twisted my ankle badly, severe pain and swelling.",emergency
+How to treat a severe ankle sprain?,emergency
+"Think I strained my back lifting heavy object, can't move well.",emergency
+Can't put any weight on foot after twisting it.,emergency
+Difference between sprain and fracture symptoms?,emergency
+RICE therapy instructions for bad sprain.,emergency
+"Ankle is very swollen and bruised, maybe sprained.",emergency
+"Pulled muscle in leg, intense pain on movement.",emergency
+Severe wrist sprain first aid required.,emergency
+"Knee sprain from sports injury, intense pain.",emergency
+Treating acute muscle strain immediately.,emergency
+Should I immobilize a badly sprained wrist?,emergency
+Back strain causing muscle spasms.,emergency
+"Hit head very hard, feeling dizzy and nauseous.",emergency
+What are possible concussion symptoms to look for?,emergency
+"Fell and hit head, lost consciousness for a moment.",emergency
+What to do immediately after a blow to the head?,emergency
+Signs of serious head injury needing ER?,emergency
+"Child hit head hard, now vomiting.",emergency
+Concussion care instructions needed please.,emergency
+Headache and confusion developing after head impact.,emergency
+Is it safe to let someone sleep after hitting their head hard?,emergency
+Bleeding from scalp wound after fall.,emergency
+Monitoring instructions for concussion signs.,emergency
+Pupils look unequal size after head injury.,emergency
+"Severe, worsening headache post-impact.",emergency
+When to seek immediate medical help for head injury?,emergency
+Possible skull fracture symptoms.,emergency
+Found someone shivering uncontrollably outside in cold.,emergency
+How to treat hypothermia victim?,emergency
+What are the signs of severe hypothermia?,emergency
+"Lost hiking, feeling extremely cold, numb, and confused.",emergency
+Warming someone with hypothermia safely and correctly.,emergency
+"Fell into icy water, now shivering violently.",emergency
+"Infant feels very cold to touch, lethargic.",emergency
+Hypothermia first aid steps immediately.,emergency
+Confusion and slurred speech noted from cold exposure.,emergency
+What actions to avoid for hypothermia treatment?,emergency
+Recognizing early stages of hypothermia.,emergency
+Frostbite and hypothermia occurring together.,emergency
+Need urgent help for person suffering hypothermia.,emergency
+Core body temperature seems very low.,emergency
+"Skin is pale, cool, clammy, rapid pulse - could it be shock?",emergency
+How to treat someone for shock right now?,emergency
+What are the signs of shock after a major injury?,emergency
+Lay person in shock down? Elevate legs how high?,emergency
+What could be causing shock symptoms?,emergency
+First aid steps for managing shock.,emergency
+"Feeling faint, weak, cold, and anxious after accident.",emergency
+Should I keep a shock victim warm with blankets?,emergency
+Recognizing different types of shock quickly.,emergency
+Shock treatment guidelines needed.,emergency
+"Rapid shallow breathing, low blood pressure - suspect shock?",emergency
+Positioning for a patient in shock.,emergency
+When should I suspect shock is developing?,emergency
+Managing shock until help arrives.,emergency
+Child just swallowed cleaning fluid! What to do?,emergency
+"Think I've ingested poison, need help immediately!",emergency
+Accidental overdose on prescription medication taken.,emergency
+How to treat suspected poisoning situation?,emergency
+Should I induce vomiting for ingested substance?,emergency
+"Contacted poison ivy/oak/sumac, severe reaction developing.",emergency
+What are carbon monoxide poisoning symptoms?,emergency
+"Severe vomiting/diarrhea, suspect food poisoning.",emergency
+What to do if someone swallows bleach or strong chemical?,emergency
+Need poison control advice urgently.,emergency
+Inhaled potentially toxic fumes from chemical spill.,emergency
+"Possible drug overdose, person is unresponsive.",emergency
+Unknown substance ingested by child.,emergency
+Symptoms of poisoning quick reference guide.,emergency
+First aid for corrosive substance ingestion.,emergency
+Chemical splashed directly in eye! Help!,emergency
+How to flush eye properly after chemical exposure?,emergency
+"Got hit hard in the eye, vision is blurry.",emergency
+"There's something stuck in my eye, can't remove it.",emergency
+"Scratch on cornea suspected, severe eye pain.",emergency
+First aid instructions for eye injury.,emergency
+Eye is bleeding after impact.,emergency
+"Welding flash burn in eyes, intense pain.",emergency
+Sudden loss of vision in one eye.,emergency
+Object impaled in eye - what should I do / not do?,emergency
+Treating severe black eye with vision changes.,emergency
+Urgent eye injury care instructions.,emergency
+Sharp pain in eye after debris hit it at speed.,emergency
+Foreign body embedded in eye surface.,emergency
+Severe allergic reaction to bee sting occurring!,emergency
+"Multiple wasp stings, feeling very unwell now.",emergency
+"Spider bite looks badly infected, red streak spreading.",emergency
+How to treat bad insect bite reaction with swelling?,emergency
+"Tick bite discovered, worried about Lyme disease transmission.",emergency
+What are signs of anaphylaxis from insect sting?,emergency
+Painful scorpion sting on foot.,emergency
+How to remove bee stinger correctly?,emergency
+Swelling spreading rapidly after insect bite.,emergency
+Experiencing difficulty breathing after sting.,emergency
+Possible brown recluse or widow spider bite.,emergency
+First aid for venomous spider or snake bite.,emergency
+Severe pain and blistering at bite site.,emergency
+"Pulled someone unresponsive from water, not breathing.",emergency
+How to perform rescue breathing correctly?,emergency
+Drowning first aid steps needed now!,emergency
+Water rescue breathing technique guide.,emergency
+"Child fell in pool, pulled out, unresponsive.",emergency
+Difference between rescue breathing and full CPR?,emergency
+Starting rescue breaths immediately.,emergency
+Near-drowning victim care instructions.,emergency
+How long should rescue breathing be continued?,emergency
+Checking airway for obstruction in drowning victim.,emergency
+Mouth-to-mouth resuscitation guide please.,emergency
+What to do after pulling unconscious person from water?,emergency
+Secondary drowning symptoms to watch for?,emergency
+"Got hit hard in face, eye swelling shut rapidly.",emergency
+How to treat a severe black eye?,emergency
+Reducing swelling and pain for black eye.,emergency
+Pain relief options for bad shiner.,emergency
+Cold compress instructions for black eye.,emergency
+When is a black eye considered a serious injury?,emergency
+Experiencing vision problems with the black eye.,emergency
+Seeing double after getting black eye.,emergency
+Care instructions for badly bruised eye area.,emergency
+Need evaluation for orbital fracture with black eye?,emergency
+"Large friction blister popped, skin underneath is raw and painful.",emergency
+Burn blister covering a significant area of skin.,emergency
+"Signs of infected blister? Pus draining, red streaks.",emergency
+"Should I pop a very large, tense blister?",emergency
+How to treat a painful blood blister under nail?,emergency
+Severe blistering occurred after chemical burn.,emergency
+How to protect a deroofed blister to prevent infection?,emergency
+Blisters developing on potentially frostbitten skin.,emergency
+Painful blisters on feet making walking impossible.,emergency
+Care instructions for second-degree burn blisters.,emergency
+"Massive bruise appeared after a hard fall, extremely painful.",emergency
+Large unexplained bruise developing on torso.,emergency
+Bruise keeps getting bigger and feels hard (hematoma?).,emergency
+Signs of internal bleeding associated with large bruise?,emergency
+Deep tissue bruise treatment advice.,emergency
+How to care for a severe contusion injury?,emergency
+Noticing sudden onset of easy or large bruising.,emergency
+Painful bruise on head developing after impact.,emergency
+Hematoma care instructions needed.,emergency
+When to worry about a large or rapidly growing bruise?,emergency
+"Dog bite broke the skin deeply, significant bleeding.",emergency
+How to clean an animal bite wound properly?,emergency
+"Cat bite seems infected, area is red, hot, and swollen.",emergency
+Worried about rabies risk from stray dog bite.,emergency
+Need snake bite first aid instructions quick!,emergency
+"Possible bat bite exposure, seeking advice.",emergency
+Wild animal bite treatment recommendations.,emergency
+"Child bitten by neighbor's dog, wound looks deep.",emergency
+"Deep puncture wound from cat bite, high infection risk.",emergency
+Should I seek medical attention for this dog bite?,emergency
+Reducing risk of infection from animal bite.,emergency
+Severe allergic reaction causing trouble breathing!,emergency
+Need instructions for using an EpiPen immediately!,emergency
+Anaphylactic shock symptoms are starting.,emergency
+Throat feels like it's closing up after eating nuts.,emergency
+"Hives all over body, feeling faint after insect sting.",emergency
+What to do during anaphylaxis emergency?,emergency
+"Administered EpiPen, what are the next critical steps?",emergency
+Recognizing signs of anaphylaxis rapidly.,emergency
+Allergic reaction escalating very quickly.,emergency
+"Sudden swelling of lips, tongue, or face.",emergency
+Emergency care instructions for severe allergic reaction.,emergency
+How to administer epinephrine auto-injector correctly?,emergency
+"Person collapsed working outside in heat, skin feels very hot and dry.",emergency
+How to treat heatstroke urgently? Need steps now.,emergency
+Difference between heatstroke and heat exhaustion symptoms?,emergency
+Cooling someone with suspected heatstroke fast.,emergency
+Victim is confused and has stopped sweating despite heat.,emergency
+Heatstroke first aid procedure required.,emergency
+Child showing signs of severe heatstroke.,emergency
+How to prevent heatstroke from getting worse?,emergency
+Emergency cooling methods for hyperthermia.,emergency
+Body temperature is extremely high (measured).,emergency
+Person is unconscious due to extreme heat exposure.,emergency
+Is this heatstroke or severe heat exhaustion? Need help differentiating.,emergency
+"Someone is having a seizure right now, what should I do?",emergency
+How can I help someone during a seizure safely?,emergency
+Protecting person's head during convulsion.,emergency
+"This is their first seizure ever, need guidance.",emergency
+Seizure has been lasting longer than 5 minutes.,emergency
+What should I NOT do during someone's seizure?,emergency
+Child having febrile seizure due to high fever.,emergency
+Post-seizure care instructions needed.,emergency
+Should I place them in the recovery position after seizure stops?,emergency
+First aid for grand mal (tonic-clonic) seizure.,emergency
+Experiencing multiple seizures without recovery in between.,emergency
+Recognizing different types of seizures.,emergency
+Nosebleed hasn't stopped after 20 minutes of pressure.,emergency
+Heavy nosebleed causing dizziness or weakness.,emergency
+"How to stop a severe, persistent nosebleed?",emergency
+Pinching nose correctly but blood still flowing heavily.,emergency
+Nosebleed started after significant head injury.,emergency
+"Experiencing frequent, severe nosebleeds recently.",emergency
+What position is best for a bad nosebleed? Lean forward?,emergency
+Suspect posterior nosebleed as blood is going down throat.,emergency
+When should I consider a nosebleed an emergency?,emergency
+First aid for persistent epistaxis (nosebleed).,emergency
+"Fingers look white and feel numb and hard, possible frostbite.",emergency
+How to treat frostbite correctly?,emergency
+Rewarming frostbitten skin safely - what method?,emergency
+Signs of severe frostbite? Skin turning blue or black.,emergency
+"Frostbite on toes suspected, complete loss of feeling.",emergency
+What should I absolutely NOT do for frostbite (like rubbing)?,emergency
+Experiencing severe pain during thawing of frostbitten area.,emergency
+How to prevent further tissue damage from frostbite?,emergency
+Frostbite first aid guide needed.,emergency
+Dealing with hypothermia and frostbite simultaneously.,emergency
+Blisters are forming on frostbitten skin now.,emergency
+"Baby has dangerously high fever, over 40C / 104F!",emergency
+Adult has high fever with confusion and stiff neck.,emergency
+How to reduce a dangerously high fever in a child?,emergency
+Fever is accompanied by a spreading rash and difficulty breathing.,emergency
+When is a fever an emergency situation for an adult?,emergency
+Febrile seizure just occurred with the high fever.,emergency
+Persistent high fever not coming down with medicine.,emergency
+Fever in a newborn infant requires immediate advice.,emergency
+Could these symptoms with fever indicate sepsis?,emergency
+Severe headache combined with very high fever.,emergency
+Treating extremely high body temperatures (hyperpyrexia).,emergency
+"Shoulder looks visibly out of place, causing intense pain.",emergency
+How should I handle a suspected joint dislocation?,emergency
+Finger is obviously bent and dislocated after injury.,emergency
+Should I try to pop a dislocated joint back in place?,emergency
+Immobilizing a dislocated joint safely.,emergency
+What are the signs of a joint dislocation?,emergency
+First aid instructions for dislocation required.,emergency
+Severe pain and noticeable deformity in the joint area.,emergency
+Kneecap appears dislocated to the side.,emergency
+"Elbow dislocation suspected, arm locked in position.",emergency
+Hip dislocation symptoms after major trauma.,emergency
+Hi there,non_emergency
+Hello?,non_emergency
+Good morning,non_emergency
+How are you doing today?,non_emergency
+What's up?,non_emergency
+Hey bot,non_emergency
+Good afternoon,non_emergency
+Evening!,non_emergency
+How's it going?,non_emergency
+Nice to meet you,non_emergency
+Yo,non_emergency
+Greetings,non_emergency
+Hiya,non_emergency
+Just saying hi,non_emergency
+Howdy,non_emergency
+Is anyone there?,non_emergency
+Hope you're having a good day,non_emergency
+What's new?,non_emergency
+Talk to me,non_emergency
+Let's chat,non_emergency
+Who are you?,non_emergency
+What is your name?,non_emergency
+Who created you?,non_emergency
+What can you do?,non_emergency
+What are your capabilities?,non_emergency
+Are you an AI?,non_emergency
+Are you human?,non_emergency
+What is your purpose?,non_emergency
+How do you work?,non_emergency
+Where did you learn all this?,non_emergency
+Tell me about yourself.,non_emergency
+Are you always online?,non_emergency
+What version are you?,non_emergency
+Can you learn?,non_emergency
+Do you have feelings?,non_emergency
+Are you connected to the internet?,non_emergency
+What model are you based on?,non_emergency
+Can you help me with emergencies?,non_emergency
+Explain your function.,non_emergency
+What are your limitations?,non_emergency
+Do you sleep?,non_emergency
+Are you sentient?,non_emergency
+What programming language are you written in?,non_emergency
+How old are you?,non_emergency
+Tell me more about your design.,non_emergency
+Can you understand different languages?,non_emergency
+What kind of bot are you?,non_emergency
+Where is your server located?,non_emergency
+Do you have updates?,non_emergency
+Are you part of a bigger system?,non_emergency
+Tell me a joke,non_emergency
+Make me laugh,non_emergency
+Do you know any funny stories?,non_emergency
+Sing a song,non_emergency
+Can you rap?,non_emergency
+Tell me a riddle,non_emergency
+Play a game,non_emergency
+Let's play trivia,non_emergency
+Entertain me,non_emergency
+What's funny?,non_emergency
+Got any puns?,non_emergency
+Tell me a knock-knock joke,non_emergency
+Recite a poem,non_emergency
+Can you beatbox?,non_emergency
+Tell me something interesting,non_emergency
+Do a magic trick,non_emergency
+Can you tell fortunes?,non_emergency
+Give me a fun fact,non_emergency
+What games can you play?,non_emergency
+Make a funny noise,non_emergency
+Tell me a children's story,non_emergency
+Know any good jokes about computers?,non_emergency
+Amuse me,non_emergency
+Do you have a favorite joke?,non_emergency
+Let's do something fun,non_emergency
+Can you whistle?,non_emergency
+Tell me a tongue twister,non_emergency
+Can you draw something?,non_emergency
+Imitate a cat,non_emergency
+Tell me a limerick,non_emergency
+What time is it?,non_emergency
+What's the date today?,non_emergency
+What's the weather like?,non_emergency
+Tell me the temperature in London.,non_emergency
+Will it rain tomorrow?,non_emergency
+What is the capital of France?,non_emergency
+Define 'photosynthesis'.,non_emergency
+How tall is Mount Everest?,non_emergency
+Search the web for recipes for pasta.,non_emergency
+Who won the last world cup?,non_emergency
+What's the news?,non_emergency
+Give me the latest headlines.,non_emergency
+Convert 10 miles to kilometers.,non_emergency
+What is 15 plus 27?,non_emergency
+Calculate the square root of 144.,non_emergency
+What does 'serendipity' mean?,non_emergency
+Who is the current president?,non_emergency
+Find information about Emperor penguins.,non_emergency
+What movies are playing near me?,non_emergency
+How do I spell 'necessary'?,non_emergency
+Translate 'hello' to Spanish.,non_emergency
+What's the population of Australia?,non_emergency
+Tell me about Albert Einstein.,non_emergency
+What are the opening hours for the local library?,non_emergency
+How far is the moon?,non_emergency
+What's the stock price for Google?,non_emergency
+Find a nearby coffee shop.,non_emergency
+What is the boiling point of water?,non_emergency
+Explain quantum physics simply.,non_emergency
+Who wrote 'Hamlet'?,non_emergency
+What currency do they use in Japan?,non_emergency
+How long does it take to fly from Perth to Sydney?,non_emergency
+What are the main ingredients in bread?,non_emergency
+Show me pictures of kittens.,non_emergency
+What is the chemical symbol for Gold?,non_emergency
+Tell me the history of the internet.,non_emergency
+What's on TV tonight?,non_emergency
+How many planets are in our solar system?,non_emergency
+What is the longest river in the world?,non_emergency
+Find directions to the nearest park.,non_emergency
+Who invented the telephone?,non_emergency
+What are the seven wonders of the world?,non_emergency
+Explain the theory of relativity.,non_emergency
+What is pi?,non_emergency
+How does a car engine work?,non_emergency
+What is the speed of light?,non_emergency
+Find lyrics for 'Bohemian Rhapsody'.,non_emergency
+What is blockchain?,non_emergency
+Tell me about the Great Barrier Reef.,non_emergency
+How do birds fly?,non_emergency
+How do I connect my phone to Wi-Fi?,non_emergency
+My computer is running slow.,non_emergency
+How to reset my password?,non_emergency
+Can you help me troubleshoot my printer?,non_emergency
+What's the best way to back up my files?,non_emergency
+My screen brightness is too low.,non_emergency
+How do I clear my browser cache?,non_emergency
+Is this website safe?,non_emergency
+How to install software?,non_emergency
+My Bluetooth headphones won't connect.,non_emergency
+What does this error message mean: '404 Not Found'?,non_emergency
+How to update my operating system?,non_emergency
+My keyboard isn't typing.,non_emergency
+Why is my internet connection dropping?,non_emergency
+How do I set up email on my phone?,non_emergency
+My app keeps crashing.,non_emergency
+Can you explain what cloud storage is?,non_emergency
+How to take a screenshot?,non_emergency
+My mouse pointer is stuck.,non_emergency
+What antivirus software do you recommend?,non_emergency
+How to change my desktop background?,non_emergency
+My laptop battery drains quickly.,non_emergency
+How do I create a strong password?,non_emergency
+What is phishing?,non_emergency
+How to uninstall a program?,non_emergency
+My webcam isn't working.,non_emergency
+Why are my photos blurry?,non_emergency
+How to manage notifications?,non_emergency
+Can you help me set up a new device?,non_emergency
+My speakers aren't producing sound.,non_emergency
+What's your favorite color?,non_emergency
+Do you like music?,non_emergency
+What kind of food do you eat?,non_emergency
+Where do you live?,non_emergency
+Do you have friends?,non_emergency
+What do you think about humans?,non_emergency
+Are you happy?,non_emergency
+What's your favorite movie?,non_emergency
+Do you dream?,non_emergency
+What are your hobbies?,non_emergency
+Can you feel emotion?,non_emergency
+What do you think is the meaning of life?,non_emergency
+Are you male or female?,non_emergency
+Do you prefer cats or dogs?,non_emergency
+What did you do yesterday?,non_emergency
+What is your opinion on AI ethics?,non_emergency
+Do you get bored?,non_emergency
+What makes you laugh?,non_emergency
+Are you learning new things?,non_emergency
+What's the most interesting thing you know?,non_emergency
+Do you have a favorite book?,non_emergency
+What do you fear?,non_emergency
+Can you love?,non_emergency
+Do you believe in anything?,non_emergency
+What's your star sign?,non_emergency
+Play some relaxing music.,non_emergency
+Set a timer for 5 minutes.,non_emergency
+Turn on the lights.,non_emergency
+Remind me to call Mom at 6 PM.,non_emergency
+Add milk to my shopping list.,non_emergency
+Read my notifications.,non_emergency
+Increase the volume.,non_emergency
+Skip this track.,non_emergency
+Set an alarm for 7 AM tomorrow.,non_emergency
+Tell me my schedule for today.,non_emergency
+Lower the thermostat.,non_emergency
+Start navigation to work.,non_emergency
+Make a note: idea for project.,non_emergency
+Send a message to John saying 'On my way'.,non_emergency
+Record a voice memo.,non_emergency
+Dim the screen.,non_emergency
+Shuffle my playlist.,non_emergency
+Cancel the timer.,non_emergency
+What's on my calendar?,non_emergency
+Lock the doors.,non_emergency
+Start a workout timer.,non_emergency
+Read the last message.,non_emergency
+Pause the music.,non_emergency
+Show my shopping list.,non_emergency
+Turn off the bedroom lamp.,non_emergency
+What's the best pizza topping?,non_emergency
+Do you think it will rain?,non_emergency
+Is AI going to take over the world?,non_emergency
+What's your favorite season?,non_emergency
+Should I learn Python or Java?,non_emergency
+Is coffee better than tea?,non_emergency
+What do you think of the latest movie?,non_emergency
+Is technology making us less social?,non_emergency
+What's the best way to relax?,non_emergency
+Do you prefer books or movies?,non_emergency
+Is pineapple on pizza acceptable?,non_emergency
+What is good music?,non_emergency
+Do you think electric cars are the future?,non_emergency
+What's your opinion on social media?,non_emergency
+Is it better to travel or stay home?,non_emergency
+I'm bored.,non_emergency
+This is interesting.,non_emergency
+Just testing the system.,non_emergency
+"Okay, that makes sense.",non_emergency
+I don't understand.,non_emergency
+Whatever.,non_emergency
+Hmm.,non_emergency
+Testing 1 2 3.,non_emergency
+That's cool.,non_emergency
+I need a break.,non_emergency
+This is taking too long.,non_emergency
+Wow.,non_emergency
+I'm just thinking out loud.,non_emergency
+Let me see...,non_emergency
+Okay.,non_emergency
+Fine.,non_emergency
+Random thoughts.,non_emergency
+Is this thing working?,non_emergency
+Just Browse.,non_emergency
+Nothing important.,non_emergency
+Thank you,non_emergency
+Thanks a lot,non_emergency
+Appreciate the help,non_emergency
+Please,non_emergency
+Could you please...?,non_emergency
+You're welcome,non_emergency
+No problem,non_emergency
+"Got it, thanks",non_emergency
+Many thanks,non_emergency
+"That was helpful, thank you",non_emergency
+Goodbye,non_emergency
+Bye,non_emergency
+See you later,non_emergency
+Take care,non_emergency
+Farewell,non_emergency
+Catch you later,non_emergency
+Signing off,non_emergency
+Bye for now,non_emergency
+Until next time,non_emergency
+Talk soon,non_emergency
+I want to kill myself,distress
+I can't take this anymore,distress
+"Everything hurts, I want to end it",distress
+I just want it to stop,distress
+"Please help me, I'm not okay",distress
+I don't want to live anymore,distress
+I'm thinking of ending it all,distress
+This is too much for me,distress
+No one can help me now,distress
+I'm going to die,distress
+I want to disappear forever,distress
+There's no point in continuing,distress
+I want out of this life,distress
+I feel completely hopeless,distress
+This pain is unbearable,distress
+I don't care about anything anymore,distress
+I'm done with everything,distress
+Let me die,distress
+I don't think I can survive today,distress
+I can't go on like this,distress
+I'm just so tired of life,distress
+Please let this be over soon,distress
+I've given up,distress
+No one would care if I was gone,distress
+I don't see the point of living,distress
+I'm drowning in pain,distress
+My life is falling apart,distress
+I hate myself and my life,distress
+I can't handle this anymore,distress
+This is the end for me,distress
+"Help me, I don't want to live",distress
+I'm not safe right now,distress
+I feel like I'm dying inside,distress
+Every day is a nightmare,distress
+I want to jump off a bridge,distress
+Nothing matters to me anymore,distress
+I feel so empty and broken,distress
+I think I'm going to hurt myself,distress
+I want to take my life,distress
+It would be better if I was gone,distress
+I'm seriously not okay,distress
+I'm collapsing emotionally,distress
+I feel like everything is closing in,distress
+I can't escape the pain,distress
+My thoughts are scaring me,distress
+Why should I keep living?,distress
+I feel dead inside,distress
+Please make it stop,distress
+The pain won't end,distress
+I'm stuck in my mind and it's killing me,distress
+Nobody understands how much I'm suffering,distress
+I'm scared of what I'm thinking,distress
+"If I had the chance, I'd end it right now",distress

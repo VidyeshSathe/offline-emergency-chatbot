@@ -1,0 +1,12 @@
+# render.yaml
+
+services:
+  - type: web
+    name: offline-emergency-chatbot
+    env: python
+    buildCommand: ""
+    startCommand: ./start.sh
+    plan: free
+    envVars:
+      - key: ENV
+        value: production

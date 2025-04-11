@@ -1,0 +1,188 @@
+timestamp,user_input,intent,confidence,spread_score,top_score,reason
+2025-04-10T16:06:57.710352,I have a deep cut on my leg,emergency,0.5059,0.1058,0.8197,responded
+2025-04-10T16:07:14.864857,He is not breathing,emergency,0.6831,0.0989,0.4802,disambiguated
+2025-04-10T16:07:28.331152,My skin is blistered from hot oil,emergency,0.5358,0.0933,0.5127,disambiguated
+2025-04-10T16:07:44.819331,He collapsed and is shaking,emergency,0.6934,0.0718,0.4392,disambiguated
+2025-04-10T16:07:56.828242,There’s foam in his mouth and he’s unresponsive,emergency,0.7598,0.0740,0.4241,disambiguated
+2025-04-10T16:08:03.460023,I hurt my leg,non_emergency,0.6263,0.0716,0.3859,fallback
+2025-04-10T16:08:12.643277,I feel weird,emergency,0.5680,0.0279,0.2101,fallback
+2025-04-10T16:08:17.421494,I injured something,non_emergency,0.5057,0.0665,0.3271,fallback
+2025-04-10T16:08:23.279967,There’s an emergency in the hallway,emergency,0.5339,0.0542,0.3314,fallback
+2025-04-10T16:08:30.345404,Something bad just happened,emergency,0.5079,0.0240,0.2565,vague_general
+2025-04-10T16:08:34.960573,asdfghjkl,non_emergency,0.5001,0.0387,0.2061,fallback
+2025-04-10T16:08:39.180510,12345@#!!,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T16:08:43.252510,!!!!!,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T16:08:48.865071,I love you,non_emergency,0.8286,0.0399,0.1435,fallback
+2025-04-10T16:08:54.111914,Sing me a song,non_emergency,0.7571,0.0243,0.1884,vague_general
+2025-04-10T16:08:58.224924,What is 2+2?,non_emergency,0.8148,0.0236,0.1512,vague_general
+2025-04-10T16:09:09.875475,I am bleeding,emergency,0.6144,0.1198,0.8399,responded
+2025-04-10T16:09:30.210655,My foot hurts and I don’t know what’s wrong,non_emergency,0.6095,0.0767,0.3858,fallback
+2025-04-10T16:09:38.977927,He is unconscious and not moving,emergency,0.7457,0.0884,0.4929,disambiguated
+2025-04-10T16:09:45.934590,Tell me a joke,non_emergency,0.8462,0.0289,0.1951,fallback
+2025-04-10T16:09:50.299726,My finger is cut and bleeding,emergency,0.6369,0.1056,0.8137,responded
+2025-04-10T16:09:58.987292,Zzzzzzz,non_emergency,0.5001,0.0300,0.1586,fallback
+2025-04-10T19:02:01.855900,I have a deep cut on my hand,non_emergency,0.5391,0.0000,0.0000,non_emergency
+2025-04-10T19:02:18.984628,My friend is not breathing and collapsed,emergency,0.6007,0.0927,0.5423,disambiguated
+2025-04-10T19:02:30.068197,He touched hot metal and his skin is burned,emergency,0.7503,0.0712,0.5308,disambiguated
+2025-04-10T19:02:37.701401,There's blood coming from my leg,emergency,0.5928,0.0564,0.3994,fallback
+2025-04-10T19:02:42.874224,She fainted and isn't waking up,emergency,0.5675,0.0623,0.5461,responded
+2025-04-10T19:02:51.575593,He's unconscious with no pulse,emergency,0.6853,0.1341,0.8569,responded
+2025-04-10T19:03:00.749023,There’s a nail puncture on my foot,non_emergency,0.5539,0.0000,0.0000,non_emergency
+2025-04-10T19:03:10.087690,His skin is peeling after chemical exposure,emergency,0.7786,0.0715,0.5644,disambiguated
+2025-04-10T19:03:20.497958,I was stung and now can't breathe,emergency,0.6647,0.0753,0.4563,responded
+2025-04-10T19:03:28.840015,He was electrocuted and isn't moving,emergency,0.6317,0.0861,0.7852,responded
+2025-04-10T19:04:07.994419,I hurt my arm,non_emergency,0.6559,0.0000,0.0000,non_emergency
+2025-04-10T19:04:13.604107,Something’s wrong,non_emergency,0.5057,0.0000,0.0000,non_emergency
+2025-04-10T19:04:18.229379,I feel off today,non_emergency,0.5709,0.0000,0.0000,non_emergency
+2025-04-10T19:04:22.769317,He’s acting weird,emergency,0.6038,0.0312,0.1597,fallback
+2025-04-10T19:04:28.732599,I don’t feel right,emergency,0.5201,0.0250,0.2436,fallback
+2025-04-10T19:04:32.700244,There’s a problem with my chest,non_emergency,0.5835,0.0000,0.0000,non_emergency
+2025-04-10T19:04:36.732926,My foot hurts badly,non_emergency,0.5367,0.0000,0.0000,non_emergency
+2025-04-10T19:04:42.139094,I can’t explain it but it feels bad,non_emergency,0.5115,0.0000,0.0000,non_emergency
+2025-04-10T19:04:47.847958,It’s painful but I don’t know what happened,non_emergency,0.5692,0.0000,0.0000,non_emergency
+2025-04-10T19:04:52.072618,My neck is sore after falling,non_emergency,0.5310,0.0000,0.0000,non_emergency
+2025-04-10T19:04:56.492164,Tell me a joke,non_emergency,0.8462,0.0000,0.0000,non_emergency
+2025-04-10T19:05:02.522801,What’s the weather like?,non_emergency,0.7632,0.0000,0.0000,non_emergency
+2025-04-10T19:05:13.978100,Open Google,non_emergency,0.5412,0.0000,0.0000,non_emergency
+2025-04-10T19:05:17.707019,I love you,non_emergency,0.8286,0.0000,0.0000,non_emergency
+2025-04-10T19:05:21.912903,Play my favorite song,non_emergency,0.7869,0.0000,0.0000,non_emergency
+2025-04-10T19:05:26.678422,Do you know Elon Musk?,non_emergency,0.8780,0.0000,0.0000,non_emergency
+2025-04-10T19:05:30.879267,How are you feeling today?,non_emergency,0.7965,0.0000,0.0000,non_emergency
+2025-04-10T19:05:37.727000,My favorite color is blue,non_emergency,0.7104,0.0000,0.0000,non_emergency
+2025-04-10T19:05:42.586430,Who won the match last night?\,non_emergency,0.7499,0.0000,0.0000,non_emergency
+2025-04-10T19:05:46.963729,Can you dance?,non_emergency,0.9147,0.0000,0.0000,non_emergency
+2025-04-10T19:05:50.723440,asdfghjkl,non_emergency,0.5001,0.0000,0.0000,non_emergency
+2025-04-10T19:05:54.162697,12345@#!!,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T19:05:57.435309,...,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T19:06:01.375431,!!!!,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T20:44:23.822270,I hurt my hand,non_emergency,0.4661,0.0000,0.0000,hybrid_agreement
+2025-04-10T21:09:03.264683,i hurt my hand,non_emergency,0.4661,0.0000,0.0000,hybrid_agreement
+2025-04-10T21:09:16.544179,i hurt my leg and its bleeding,emergency,0.4968,0.0979,0.8005,hybrid_agreement
+2025-04-10T21:09:57.896751,help someone is not breathing,emergency,0.5259,0.1054,0.5406,hybrid_agreement
+2025-04-10T21:10:13.159011,afiyGFQAYQWFOYQW,non_emergency,0.3662,0.0000,0.0000,hybrid_agreement
+2025-04-10T21:10:18.288859,TELL ME A JOKE,non_emergency,0.7280,0.0000,0.0000,hybrid_agreement
+2025-04-10T21:10:53.526810,"Wikipedia[b] is a free-content online encyclopedia, written and maintained by a community of volunteers, known as Wikipedians, through open collaboration and the wiki software MediaWiki. Founded by Jimmy Wales and Larry Sanger on January 15, 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an American nonprofit organization funded mainly by donations from readers.[3] Wikipedia is the largest and most-read reference work in history.[4][5]",non_emergency,0.0000,0.0000,0.0000,too_long
+2025-04-10T21:10:53.535809,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:53.535809,"Initially available only in English, Wikipedia now exists in more than 300 languages. The English Wikipedia, with over 6 million articles, remains the largest of the editions, which together comprise more than 64 million articles and attract more than 1.5 billion unique device visits and 13 million edits per month (about 5 edits per second on average) as of April 2024.[W 1] As of March 2025, over 25% of Wikipedia's traffic comes from the United States, followed by Japan at 6.38%, the United Kingdom at 5.81%, Germany at 4.97%, Russia at 4.86%, and the remaining 52.25% split among other countries.[6]",non_emergency,0.0000,0.0000,0.0000,too_long
+2025-04-10T21:10:53.536809,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:53.537810,"Wikipedia has been praised for enabling the democratization of knowledge, its extensive coverage, unique structure, and culture. Wikipedia has been censored by some national governments, ranging from specific pages to the entire site.[7][8] Although Wikipedia's volunteer editors have written extensively on a wide variety of topics, the encyclopedia has been criticized for systemic bias, such as a gender bias against women and geographical bias against the Global South (Eurocentrism).[9][10] While the reliability of Wikipedia was frequently criticized in the 2000s, it has improved over time, receiving greater praise from the late 2010s onward,[4][11][12] while becoming an important fact-checking site.[13][14] Articles on breaking news are often accessed as sources for up-to-date information about those events.[15][16]",non_emergency,0.0000,0.0000,0.0000,too_long
+2025-04-10T21:10:53.537810,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:53.586423,History,non_emergency,0.4870,0.0000,0.0000,hybrid_agreement
+2025-04-10T21:10:53.671343,Main article: History of Wikipedia,non_emergency,0.5260,0.0000,0.0000,hybrid_agreement
+2025-04-10T21:10:53.762025,Nupedia,non_emergency,0.3662,0.0000,0.0000,hybrid_agreement
+2025-04-10T21:10:53.840584,Main article: Nupedia,non_emergency,0.4577,0.0000,0.0000,hybrid_agreement
+2025-04-10T21:10:53.841477,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:53.842475,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:54.196875,Wikipedia founders Jimmy Wales (left) and Larry Sanger (right),vague_emergency,0.1179,0.0211,0.2511,disagreement_vague
+2025-04-10T21:10:54.197875,"Various collaborative online encyclopedias were attempted before the start of Wikipedia, but with limited success.[17] Wikipedia began as a complementary project for Nupedia, a free online English-language encyclopedia project whose articles were written by experts and reviewed under a formal process.[18] It was founded on March 9, 2000, under the ownership of Bomis, a web portal company. Its main figures were Bomis CEO Jimmy Wales and Larry Sanger, editor-in-chief for Nupedia and later Wikipedia.[1][19] Nupedia was initially licensed under its own Nupedia Open Content License, but before Wikipedia was founded, Nupedia switched to the GNU Free Documentation License at the urging of Richard Stallman.[W 2] Wales is credited with defining the goal of making a publicly editable encyclopedia,[20][W 3] while Sanger is credited with the strategy of using a wiki to reach that goal.[W 4] On January 10, 2001, Sanger proposed on the Nupedia mailing list to create a wiki as a ""feeder"" project for Nupedia.[W 5]",non_emergency,0.0000,0.0000,0.0000,too_long
+2025-04-10T21:10:54.198874,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:54.627655,Launch and rapid growth,vague_emergency,0.2383,0.0339,0.2451,disagreement_vague
+2025-04-10T21:10:54.630373,"Wikipedia was launched on January 15, 2001[18] (referred to as Wikipedia Day) as a single English language edition with the domain name www.wikipedia.com,[W 6] and was announced by Sanger on the Nupedia mailing list.[20] The name originated from a blend of the words wiki and encyclopedia.[21][22] Its integral policy of ""neutral point-of-view""[W 7] was codified in its first few months. Otherwise, there were initially relatively few rules, and it operated independently of Nupedia.[20] Bomis originally intended for it to be a for-profit business.[23]",non_emergency,0.0000,0.0000,0.0000,too_long
+2025-04-10T21:10:54.631084,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:54.631084,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:54.692210,"The Wikipedia home page on December 20, 2001[c]",non_emergency,0.5862,0.0000,0.0000,hybrid_agreement
+2025-04-10T21:10:54.693191,"Wikipedia gained early contributors from Nupedia, Slashdot postings, and web search engine indexing. Language editions were created beginning in March 2001, with a total of 161 in use by the end of 2004.[W 8][W 9] Nupedia and Wikipedia coexisted until the former's servers were taken down permanently in 2003, and its text was incorporated into Wikipedia. The English Wikipedia passed the mark of 2 million articles on September 9, 2007, making it the largest encyclopedia ever assembled, surpassing the Yongle Encyclopedia made in China during the Ming dynasty in 1408, which had held the record for almost 600 years.[24]",non_emergency,0.0000,0.0000,0.0000,too_long
+2025-04-10T21:10:54.694210,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:54.695207,"Citing fears of commercial advertising and lack of control, users of the Spanish Wikipedia forked from Wikipedia to create Enciclopedia Libre in February 2002.[W 10] Wales then announced that Wikipedia would not display advertisements, and changed Wikipedia's domain from wikipedia.com to wikipedia.org.[25][W 11]",non_emergency,0.0000,0.0000,0.0000,too_long
+2025-04-10T21:10:54.696208,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:54.697209,"After an early period of exponential growth,[26] the growth rate of the English Wikipedia in terms of the numbers of new articles and of editors, appears to have peaked around early 2007.[27] The edition reached 3 million articles in August 2009. Around 1,800 articles were added daily to the encyclopedia in 2006; by 2013 that average was roughly 800.[W 12] A team at the Palo Alto Research Center attributed this slowing of growth to ""increased coordination and overhead costs, exclusion of newcomers, and resistance to new edits"".[26] Others suggest that the growth is flattening naturally because articles that could be called ""low-hanging fruit""—topics that clearly merit an article—have already been created and built up extensively.[28][29][30]",non_emergency,0.0000,0.0000,0.0000,too_long
+2025-04-10T21:10:54.697209,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:54.699190,"In November 2009, a researcher at the Rey Juan Carlos University in Madrid, Spain found that the English Wikipedia had lost 49,000 editors during the first three months of 2009; in comparison, it lost only 4,900 editors during the same period in 2008.[31][32] The Wall Street Journal cited the array of rules applied to editing and disputes related to such content among the reasons for this trend.[33] Wales disputed these claims in 2009, denying the decline and questioning the study's methodology.[34] Two years later, in 2011, he acknowledged a slight decline, noting a decrease from ""a little more than 36,000 writers"" in June 2010 to 35,800 in June 2011. In the same interview, he also claimed the number of editors was ""stable and sustainable"".[35] A 2013 MIT Technology Review article, ""The Decline of Wikipedia"", questioned this claim, reporting that since 2007 Wikipedia had lost a third of its volunteer editors, and suggesting that those remaining had focused increasingly on minutiae.[36] In July 2012, The Atlantic reported that the number of administrators was also in decline.[37] In the November 25, 2013, issue of New York magazine, Katherine Ward stated, ""Wikipedia, the sixth-most-used website, is facing an internal crisis.""[38] The number of active English Wikipedia editors has since remained steady after a long period of decline.[39][40]",non_emergency,0.0000,0.0000,0.0000,too_long
+2025-04-10T21:10:54.699190,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:54.765246,Milestones,non_emergency,0.3662,0.0000,0.0000,hybrid_agreement
+2025-04-10T21:10:54.766229,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:55.453503,"Cartogram showing number of articles in each language as of March 2024. Languages with fewer than 1,000,000 articles are represented by one circle. Languages are grouped by region of continent and each region of continent is presented by a separate color.",vague_emergency,0.1702,0.0314,0.3203,disagreement_vague
+2025-04-10T21:10:55.455489,"In January 2007, Wikipedia first became one of the ten most popular websites in the United States, according to Comscore Networks.[41] With 42.9 million unique visitors, it was ranked ninth, surpassing The New York Times (#10) and Apple (#11).[41] This marked a significant increase over January 2006, when Wikipedia ranked 33rd, with around 18.3 million unique visitors.[42] In 2014, it received 8 billion page views every month.[W 13] On February 9, 2014, The New York Times reported that Wikipedia had 18 billion page views and nearly 500 million unique visitors a month, ""according to the ratings firm comScore"".[43] As of March 2023, it ranked sixth in popularity, according to Similarweb.[44] Loveland and Reagle argue that, in process, Wikipedia follows a long tradition of historical encyclopedias that have accumulated improvements piecemeal through ""stigmergic accumulation"".[45][46]",non_emergency,0.0000,0.0000,0.0000,too_long
+2025-04-10T21:10:55.455489,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:55.456487,"On January 18, 2012, the English Wikipedia participated in a series of coordinated protests against two proposed laws in the United States Congress—the Stop Online Piracy Act (SOPA) and the PROTECT IP Act (PIPA)—by blacking out its pages for 24 hours.[47] More than 162 million people viewed the blackout explanation page that temporarily replaced its content.[48][W 14]",non_emergency,0.0000,0.0000,0.0000,too_long
+2025-04-10T21:10:55.458488,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:55.458488,"In January 2013, 274301 Wikipedia, an asteroid, was named after Wikipedia;[49] in October 2014, Wikipedia was honored with the Wikipedia Monument;[50] and, in July 2015, 106 of the 7,473 700-page volumes of Wikipedia became available as Print Wikipedia.[51] In April 2019, an Israeli lunar lander, Beresheet, crash landed on the surface of the Moon carrying a copy of nearly all of the English Wikipedia engraved on thin nickel plates; experts say the plates likely survived the crash.[52][53] In June 2019, scientists reported that all 16 GB of article text from the English Wikipedia had been encoded into synthetic DNA.[54]",non_emergency,0.0000,0.0000,0.0000,too_long
+2025-04-10T21:10:55.460488,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:55.461488,"On January 20, 2014, Subodh Varma reporting for The Economic Times indicated that not only had Wikipedia's growth stalled, it ""had lost nearly ten percent of its page views last year. There was a decline of about 2 billion between December 2012 and December 2013. Its most popular versions are leading the slide: page-views of the English Wikipedia declined by twelve percent, those of German version slid by 17 percent and the Japanese version lost 9 percent.""[55] Varma added, ""While Wikipedia's managers think that this could be due to errors in counting, other experts feel that Google's Knowledge Graphs project launched last year may be gobbling up Wikipedia users.""[55] When contacted on this matter, Clay Shirky, associate professor at New York University and fellow at Harvard's Berkman Klein Center for Internet & Society said that he suspected much of the page-view decline was due to Knowledge Graphs, stating, ""If you can get your question answered from the search page, you don't need to click [any further].""[55] By the end of December 2016, Wikipedia was ranked the fifth most popular website globally.[56] As of January 2023, 55,791 English Wikipedia articles have been cited 92,300 times in scholarly journals,[57] from which cloud computing was the most cited page.[58]",non_emergency,0.0000,0.0000,0.0000,too_long
+2025-04-10T21:10:55.462487,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:55.463488,"On January 18, 2023, Wikipedia debuted a new website redesign, called ""Vector 2022"".[59][60] It featured a redesigned menu bar, moving the table of contents to the left as a sidebar, and numerous changes in the locations of buttons like the language selection tool.[60][W 15] The update initially received backlash, most notably when editors of the Swahili Wikipedia unanimously voted to revert the changes.[59][61]",non_emergency,0.0000,0.0000,0.0000,too_long
+2025-04-10T21:10:55.464487,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:55.511078,Openness,non_emergency,0.3662,0.0000,0.0000,hybrid_agreement
+2025-04-10T21:10:55.512079,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:55.798568,Differences between versions of an article are highlighted.,vague_emergency,0.0629,0.0383,0.2702,disagreement_vague
+2025-04-10T21:10:55.912147,"Unlike traditional encyclopedias, Wikipedia follows the procrastination principle regarding the security of its content, meaning that it waits until a problem arises to fix it.[62]",non_emergency,0.6049,0.0000,0.0000,hybrid_agreement
+2025-04-10T21:10:55.914146,,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-10T21:10:55.983717,Restrictions,non_emergency,0.3662,0.0000,0.0000,hybrid_agreement
+2025-04-10T21:34:04.030942,1. My arm is hurting and I can’t move it,vague_emergency,0.4358,0.0688,0.4243,disagreement_vague
+2025-04-10T21:34:11.901055,1. My arm is hurting and I can’t move it,vague_emergency,0.4358,0.0688,0.4243,disambiguation_none_selected
+2025-04-10T21:34:12.532871,3. He has a bad headache and can’t keep his balance,vague_emergency,0.4391,0.0641,0.7516,disagreement_vague
+2025-04-10T21:34:12.916708,5. He passed out after eating too much,emergency,0.4644,0.0587,0.4130,hybrid_agreement
+2025-04-10T21:34:13.341580,7. There’s blood everywhere and he’s sweating,emergency,0.4624,0.0674,0.3544,hybrid_agreement
+2025-04-10T21:34:13.767895,8. I can’t stop shaking and feel faint,vague_emergency,0.4516,0.0669,0.3803,hybrid_agreement
+2025-04-10T21:34:14.205224,9. My legs are numb and I’m not sure why,vague_emergency,0.4665,0.0623,0.3661,disagreement_vague
+2025-04-10T21:34:14.741005,"10. I think I broke my leg, but I’m not sure",vague_emergency,0.2712,0.0562,0.3682,disagreement_vague
+2025-04-10T21:34:15.169111,11. She’s dizzy and has trouble breathing,vague_emergency,0.5168,0.0800,0.4077,disambiguation_none_selected
+2025-04-10T21:34:15.483887,13. He has trouble speaking and looks confused,vague_emergency,0.2502,0.0500,0.3088,disagreement_vague
+2025-04-10T21:34:15.925453,"14. I think he’s having a stroke, but he’s not acting right",vague_emergency,0.5088,0.0403,0.3313,hybrid_agreement
+2025-04-10T21:34:16.409951,15. I’ve got pain in my chest and difficulty breathing,emergency,0.5628,0.0771,0.6162,hybrid_agreement
+2025-04-10T21:34:16.798066,17. I’ve been feeling lightheaded and my chest feels tight,vague_emergency,0.5399,0.0649,0.4924,hybrid_agreement
+2025-04-10T21:34:17.246408,19. She says she feels numb but can still move,vague_emergency,0.4851,0.0676,0.3830,hybrid_agreement
+2025-04-10T21:34:17.725308,20. I’m shaking but I’m not sure why,vague_emergency,0.4952,0.0571,0.3142,hybrid_agreement
+2025-04-10T21:34:18.206433,21. He’s breathing very fast and his chest hurts,emergency,0.5792,0.0752,0.5251,hybrid_agreement
+2025-04-10T21:34:18.654749,23. I can’t stop coughing and it hurts in my chest,emergency,0.4952,0.0700,0.4631,hybrid_agreement
+2025-04-10T21:34:19.051484,25. He’s confused and can’t seem to remember what happened,vague_emergency,0.2940,0.0413,0.3349,disagreement_vague
+2025-04-10T21:34:19.567893,26. She’s been fainting and doesn’t know why,vague_emergency,0.4675,0.0604,0.4406,disambiguation_none_selected
+2025-04-10T21:34:20.031321,28. My face is hot and I’m sweating too much,vague_emergency,0.3056,0.0755,0.4094,disambiguation_none_selected
+2025-04-10T21:34:20.694547,30. I’ve been having shortness of breath and chest pain,vague_emergency,0.4412,0.0623,0.8751,disagreement_vague
+2025-04-10T21:35:55.233885,I feel dizzy and my chest hurts,vague_emergency,0.4511,0.0754,0.5133,hybrid_agreement
+2025-04-10T21:36:07.090301,He has a bad headache and can’t keep his balance,vague_emergency,0.5539,0.0658,0.7448,semantic_override
+2025-04-10T21:36:20.316493,She’s unconscious and shaking,vague_emergency,0.5343,0.0824,0.4341,semantic_override
+2025-04-10T21:36:37.786598,He passed out after eating too much,vague_emergency,0.3948,0.0568,0.4490,disagreement_vague
+2025-04-10T21:36:47.661640,I’m feeling weak and my vision is blurry,vague_emergency,0.4127,0.0686,0.4733,hybrid_agreement
+2025-04-10T21:37:06.130865,There’s blood everywhere and he’s sweating,vague_emergency,0.4237,0.0631,0.3672,disagreement_vague
+2025-04-10T21:37:15.040203,I can’t stop shaking and feel faint,vague_emergency,0.4516,0.0777,0.4280,hybrid_agreement
+2025-04-10T21:37:35.364599,My legs are numb and I’m not sure why,vague_emergency,0.4460,0.0644,0.3992,disagreement_vague
+2025-04-10T21:37:50.394892,"I think I broke my leg, but I’m not sure",vague_emergency,0.3676,0.0672,0.4266,disagreement_vague
+2025-04-10T21:37:59.146631,my hand is hurt,emergency,0.5081,0.0574,0.3229,semantic_override
+2025-04-10T21:38:08.390870,i hurt my leg,vague_emergency,0.4350,0.0716,0.3859,disagreement_vague
+2025-04-11T10:16:37.262444,I hurt my hand,non_emergency,0.4661,0.0000,0.0000,hybrid_agreement
+2025-04-11T10:16:47.406405,I hurt my hand and its broken,emergency,0.4287,0.0663,0.4076,hybrid_agreement
+2025-04-11T10:26:34.742762,my hand is hurt,emergency,0.5081,0.0574,0.3229,semantic_override
+2025-04-11T10:26:44.240289,I am bleeding,emergency,0.5118,0.1138,0.8299,hybrid_agreement
+2025-04-11T10:50:38.270751,My friend is having a seizure and shaking,vague_emergency,0.4940,0.0772,0.8532,disagreement_vague
+2025-04-11T10:52:44.403450,My cousin's skin turned green and he started floating,emergency,0.4178,0.0491,0.3946,hybrid_agreement
+2025-04-11T10:54:45.425138,There's an eerie buzzing in my head and I can't stop humming,vague_emergency,0.4019,0.0673,0.3627,disagreement_vague
+2025-04-11T10:54:59.764113,My teeth are glowing and I see digital numbers everywhere,non_emergency,0.6056,0.0000,0.0000,hybrid_agreement
+2025-04-11T10:55:09.619776,My arm is slowly disappearing and I feel like I'm evaporating,vague_emergency,0.3859,0.0558,0.3908,hybrid_agreement
+2025-04-11T10:59:48.206928,I have a deep cut and there's blood everywhere,emergency,0.5555,0.1115,0.8328,hybrid_agreement
+2025-04-11T11:12:46.591471,My left arm feels numb and I'm really dizzy,vague_emergency,0.4143,0.0701,0.4778,hybrid_agreement
+2025-04-11T11:23:29.217864,wefjhwejhfih,non_emergency,0.3662,0.0000,0.0000,hybrid_agreement
+2025-04-11T11:24:37.081993,"I'm shaky, lightheaded, and my vision is a bit blurry",vague_emergency,0.5072,0.0727,0.4616,disambiguation_none_selected
+2025-04-11T11:46:20.901395,I'm having chest pain and shortness of breath,vague_emergency,0.4383,0.0605,0.8901,disagreement_vague
+2025-04-11T11:56:40.651223,lihigfuhi,non_emergency,0.3662,0.0000,0.0000,hybrid_agreement
+2025-04-11T11:56:48.100952,I love you,non_emergency,0.6898,0.0000,0.0000,hybrid_agreement
+2025-04-11T11:57:00.513380,I hurt my hand and its really bad,emergency,0.3467,0.0626,0.3533,hybrid_agreement
+2025-04-11T11:57:15.960301,My hand is bleeding,emergency,0.5178,0.1069,0.8151,semantic_override
+2025-04-11T12:04:21.920271,I am bleeding,emergency,0.5118,0.1168,0.8321,hybrid_agreement
+2025-04-11T12:05:33.158886,i am dying,non_emergency,0.3945,0.0000,0.0000,hybrid_agreement
+2025-04-11T12:05:52.557172,i am in soo much pain,vague_emergency,0.4504,0.0419,0.3456,disagreement_vague
+2025-04-11T12:06:03.107558,i want to kill myself,non_emergency,0.4342,0.0000,0.0000,hybrid_agreement
+2025-04-11T12:25:14.096000,I feel like everything is falling apart,vague_emergency,0.5779,0.0371,0.2574,hybrid_agreement
+2025-04-11T12:25:22.921486,Scared of what I might do to myself,vague_emergency,0.2980,0.0420,0.3102,disagreement_vague
+2025-04-11T12:25:30.928437,Not sure how much longer I can do this,non_emergency,0.5155,0.0000,0.0000,hybrid_agreement
+2025-04-11T12:25:37.534259,What’s the point of living?,non_emergency,0.6892,0.0000,0.0000,hybrid_agreement
+2025-04-11T12:25:44.716338,It’s like I’m not even here anymore,vague_emergency,0.3269,0.0270,0.2472,disagreement_vague
+2025-04-11T12:43:11.334167,My father just collapsed and isn’t waking up,vague_emergency,0.4009,0.0676,0.4965,disagreement_vague
+2025-04-11T12:43:28.234072,Someone got burned by boiling wate,emergency,0.4736,0.0815,0.4483,hybrid_agreement
+2025-04-11T12:43:44.158614,There’s a lot of blood coming from a deep wound,emergency,0.5779,0.0877,0.5585,hybrid_agreement
+2025-04-11T12:43:52.612100,It hurts everywhere,vague_emergency,0.4077,0.0647,0.2783,disagreement_vague
+2025-04-11T12:43:58.838720,I don’t feel right,distress,0.4513,0.0000,0.0000,hybrid_agreement
+2025-04-11T12:44:09.449835,She’s acting weird and keeps saying strange things,vague_emergency,0.6032,0.0438,0.2630,hybrid_agreement
+2025-04-11T12:44:15.091178,What time is it in Tokyo?,non_emergency,0.6351,0.0000,0.0000,hybrid_agreement
+2025-04-11T12:44:21.941011,Can you recommend a good movie?,non_emergency,0.8382,0.0000,0.0000,hybrid_agreement
+2025-04-11T12:44:27.328614,How do I cook pasta?,non_emergency,0.7554,0.0000,0.0000,hybrid_agreement
+2025-04-11T12:44:35.828037,"""I feel empty and hopeless all the time",distress,0.4928,0.0000,0.0000,hybrid_agreement
+2025-04-11T12:44:52.167167,"I’m not okay, I can’t keep living like this",distress,0.9170,0.0000,0.0000,hybrid_agreement
+2025-04-11T12:44:57.387854,It’s like my mind is screaming and I can’t stop it,distress,0.7618,0.0000,0.0000,hybrid_agreement
+2025-04-11T12:45:04.773986,asdjasd ajdjaslkdj,non_emergency,0.3280,0.0000,0.0000,hybrid_agreement
+2025-04-11T12:45:09.915680,!!!@#@!!@!!@@@###,non_emergency,0.0000,0.0000,0.0000,gibberish
+2025-04-11T12:45:14.911466,zzzzzzzzzzzz,non_emergency,0.3280,0.0000,0.0000,hybrid_agreement
+2025-04-11T12:45:34.463399,"""My friend collapsed while hiking in the mountains after showing signs of dizziness, sweating, and shortness of breath. We tried to give him water and help him rest, but he stopped responding. Should we continue to wait or try CPR now? We are hours from help and scared.""",emergency,0.6567,0.0776,0.5347,hybrid_agreement
+2025-04-11T12:53:12.907572,I'm feeling a bit strange,distress,0.5021,0.0000,0.0000,semantic_override
+2025-04-11T12:53:19.786692,Everything hurts,distress,0.4351,0.0000,0.0000,hybrid_agreement
+2025-04-11T12:53:27.038762,Something's off but I can't explain it,vague_emergency,0.3827,0.0343,0.3210,soft_vague_low_confidence

@@ -1,0 +1,6 @@
+user_input,choice,top1,top2,top3,score_gap,top_score
+"I'm shaky, lightheaded, and my vision is a bit blurry",None,Fainting,Eye Injuries,Head Injuries & Concussions,0.0037,0.4616
+My father just collapsed and isn’t waking up,Cpr,Fainting,Cpr,Shock (Recognizing And Treating),0.1155,0.4965
+Someone got burned by boiling wate,"Burns (1St, 2Nd, 3Rd Degree)","Burns (1St, 2Nd, 3Rd Degree)",Chemical Burns,Heatstroke,0.0864,0.4483
+There’s a lot of blood coming from a deep wound,Bleeding,Bleeding,Puncture Wounds,Nosebleed,0.0555,0.5585
+"""My friend collapsed while hiking in the mountains after showing signs of dizziness, sweating, and shortness of breath. We tried to give him water and help him rest, but he stopped responding. Should we continue to wait or try CPR now? We are hours from help and scared.""",Cpr,Fainting,Drowning,Cpr,0.0127,0.5347

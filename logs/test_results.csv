@@ -1,0 +1,128 @@
+timestamp,user_input,intent,confidence,spread_score,top_score,reason,matched_emergency
+2025-04-10T21:05:57.043172,I think I broke my ankle,vague_emergency,0.4232,0.0762,0.3831,disagreement_vague,
+2025-04-10T21:05:57.467418,My cousin got stung by a scorpion,vague_emergency,0.4282,0.0402,0.3991,disagreement_vague,
+2025-04-10T21:05:57.883111,How do I perform CPR on a baby?,emergency,0.4965,0.0829,0.4463,hybrid_agreement,Cpr
+2025-04-10T21:05:58.345429,My head hurts and I'm seeing double,vague_emergency,0.5387,0.0608,0.4755,semantic_override,
+2025-04-10T21:05:58.982932,"There’s a deep cut on my leg, and it won’t stop bleeding",emergency,0.6056,0.1139,0.7993,hybrid_agreement,Bleeding
+2025-04-10T21:05:59.415957,My grandmother collapsed and isn't breathing,emergency,0.4491,0.0845,0.4927,hybrid_agreement,Cpr
+2025-04-10T21:05:59.512567,What’s the weather like?,non_emergency,0.5138,0.0000,0.0000,hybrid_agreement,
+2025-04-10T21:05:59.611695,Tell me a joke,non_emergency,0.7280,0.0000,0.0000,hybrid_agreement,
+2025-04-10T21:05:59.713303,abchj$$#!! kjlj,non_emergency,0.3662,0.0000,0.0000,hybrid_agreement,
+2025-04-10T21:06:00.139120,My baby is choking on something,emergency,0.4659,0.0770,0.4258,hybrid_agreement,Choking
+2025-04-10T21:06:00.610593,I'm having tightness in my chest and dizziness,vague_emergency,0.5595,0.0719,0.5988,semantic_override,
+2025-04-10T21:06:01.162212,He got hit by a car and he’s unconscious,emergency,0.5167,0.0706,0.4250,hybrid_agreement,Fainting
+2025-04-10T21:06:01.596197,My skin is red and burning after a spill,emergency,0.5298,0.0740,0.5144,hybrid_agreement,Chemical Burns
+2025-04-10T21:06:02.051562,What should I pack in an emergency kit?,emergency,0.5202,0.0414,0.3469,hybrid_agreement,fallback
+2025-04-10T21:06:02.395745,My brother has a really high fever,emergency,0.4993,0.0694,0.4655,hybrid_agreement,Fever (Adults And Children)
+2025-04-10T21:06:02.690085,There's a snake bite on my leg,emergency,0.4183,0.0444,0.4714,hybrid_agreement,Animal Bite
+2025-04-10T21:06:03.113392,My sister fainted and isn't responding,vague_emergency,0.4645,0.0658,0.4573,disagreement_vague,
+2025-04-10T21:06:03.215983,What do I do in a flood?,non_emergency,0.6109,0.0000,0.0000,hybrid_agreement,
+2025-04-10T21:06:03.633313,My hand is swollen and itchy after a bee sting,emergency,0.5317,0.0584,0.5794,hybrid_agreement,Insect Bites And Stings
+2025-04-10T21:06:04.075637,I'm having trouble moving my left side,vague_emergency,0.3352,0.0516,0.3369,disagreement_vague,
+2025-04-10T21:06:04.528715,Someone slipped and is not waking up,emergency,0.4693,0.0526,0.4683,hybrid_agreement,Fainting
+2025-04-10T21:06:04.986695,Where’s the nearest hospital?,vague_emergency,0.2765,0.0370,0.2637,disagreement_vague,
+2025-04-10T21:06:05.614185,My neighbor was electrocuted,vague_emergency,0.3818,0.0936,0.7980,disagreement_vague,
+2025-04-10T21:06:06.118057,He’s vomiting a lot and looks pale,vague_emergency,0.5720,0.0595,0.4029,semantic_override,
+2025-04-10T21:06:06.593822,My ankle is sore but I'm fine,vague_emergency,0.4330,0.0722,0.4136,disagreement_vague,
+2025-04-10T21:06:07.029119,I feel like I’m going to pass out,vague_emergency,0.5207,0.0277,0.2288,hybrid_agreement,
+2025-04-10T21:06:07.702005,My friend had a seizure,emergency,0.5142,0.0733,0.8687,semantic_override,Seizures
+2025-04-10T21:06:08.154281,Help! There’s fire and I’m stuck!,vague_emergency,0.3634,0.0606,0.2950,disagreement_vague,
+2025-04-10T21:06:08.629225,I fell and something's wrong with my wrist,emergency,0.4579,0.0743,0.4346,hybrid_agreement,Fractures & Broken Bones
+2025-04-10T21:06:09.097990,Is it okay to give aspirin during a stroke?,vague_emergency,0.3323,0.0637,0.3962,disagreement_vague,
+2025-04-10T21:06:09.494020,My whole body is numb and I can't move,vague_emergency,0.4993,0.0714,0.3944,disagreement_vague,
+2025-04-10T21:06:09.567021,sdfsdfsdf asdasd,non_emergency,0.3662,0.0000,0.0000,hybrid_agreement,
+2025-04-10T21:06:09.685595,What's the Red Cross number?,non_emergency,0.6731,0.0000,0.0000,hybrid_agreement,
+2025-04-10T21:06:10.118981,My friend isn’t breathing after swimming,emergency,0.4865,0.0831,0.5092,hybrid_agreement,Drowning
+2025-04-10T21:06:10.752245,He's bleeding from the head and shaking,emergency,0.5552,0.1095,0.8104,hybrid_agreement,Bleeding
+2025-04-10T21:06:11.220130,He says his chest hurts and his arm is numb,vague_emergency,0.5168,0.0611,0.5294,semantic_override,
+2025-04-10T21:06:11.673839,My uncle was bitten by a dog,vague_emergency,0.3731,0.0245,0.4669,disagreement_vague,
+2025-04-10T21:06:12.138694,My friend got burned with hot water,emergency,0.5145,0.0763,0.4811,semantic_override,"Burns (1St, 2Nd, 3Rd Degree)"
+2025-04-10T21:06:12.613611,He’s choking and turning blue,emergency,0.6017,0.0771,0.4341,tfidf_confidence_high,Choking
+2025-04-10T21:06:13.365200,What to do in case of electric shock,emergency,0.5244,0.0946,0.8497,hybrid_agreement,Shock (Recognizing And Treating)
+2025-04-10T21:06:13.803043,There’s a snake bite on her ankle,emergency,0.5331,0.0401,0.4247,hybrid_agreement,Animal Bite
+2025-04-10T21:06:14.215799,My cousin passed out after hitting his head,emergency,0.4811,0.0858,0.4888,hybrid_agreement,Head Injuries & Concussions
+2025-04-10T21:06:14.648051,His arm is broken and twisted,vague_emergency,0.4654,0.0708,0.4393,disagreement_vague,
+2025-04-10T21:06:15.074940,Someone fell and is unconscious,emergency,0.6078,0.0748,0.4986,hybrid_agreement,Fainting
+2025-04-10T21:06:15.542860,How do I perform CPR on an adult?,emergency,0.5259,0.0842,0.4626,hybrid_agreement,Cpr
+2025-04-10T21:06:16.122312,He's bleeding from a deep cut,emergency,0.6077,0.1309,0.8555,hybrid_agreement,Bleeding
+2025-04-10T21:06:16.564895,A bee stung me and now I can’t breathe,emergency,0.4240,0.0538,0.3924,hybrid_agreement,fallback
+2025-04-10T21:06:16.991416,He is vomiting blood,emergency,0.4048,0.0505,0.3469,hybrid_agreement,fallback
+2025-04-10T21:06:17.432905,There’s a severe nosebleed that won't stop,emergency,0.5981,0.0539,0.4819,hybrid_agreement,Nosebleed
+2025-04-10T21:06:17.708246,My baby is not breathing,emergency,0.3953,0.0991,0.4662,hybrid_agreement,Cpr
+2025-04-10T21:06:17.765245,My grandpa had a stroke,non_emergency,0.7616,0.0000,0.0000,tfidf_confidence_high,
+2025-04-10T21:06:18.142609,She got burned by oil,vague_emergency,0.2660,0.0619,0.3598,disagreement_vague,
+2025-04-10T21:06:18.573420,He is not waking up after hitting his head,emergency,0.4475,0.0717,0.4508,hybrid_agreement,Head Injuries & Concussions
+2025-04-10T21:06:19.149872,We found someone drowning,emergency,0.5096,0.0891,0.9045,hybrid_agreement,Drowning
+2025-04-10T21:06:19.588212,I have a dislocated shoulder,emergency,0.4225,0.0801,0.4847,hybrid_agreement,Dislocation
+2025-04-10T21:06:19.926420,Her pulse is irregular and weak,vague_emergency,0.5014,0.0729,0.5025,semantic_override,
+2025-04-10T21:06:20.387001,She’s shivering and hypothermic,emergency,0.5968,0.0997,0.5405,hybrid_agreement,Hypothermia
+2025-04-10T21:06:20.822739,There's a gunshot wound,emergency,0.4824,0.0666,0.4468,hybrid_agreement,Puncture Wounds
+2025-04-10T21:06:21.498708,He’s having chest pain and sweating,vague_emergency,0.5791,0.0605,0.8492,semantic_override,
+2025-04-10T21:06:22.120747,Someone has an open fracture,emergency,0.5737,0.1206,0.8507,hybrid_agreement,Fractures & Broken Bones
+2025-04-10T21:06:22.544065,There’s blood coming out of his ear,vague_emergency,0.4400,0.0426,0.3418,disagreement_vague,
+2025-04-10T21:06:23.170897,My daughter has a severe allergic reaction,emergency,0.5996,0.0727,0.8489,hybrid_agreement,Anaphylaxis
+2025-04-10T21:06:23.547847,There’s a lot of blood coming out of his leg,emergency,0.4750,0.0568,0.3728,hybrid_agreement,fallback
+2025-04-10T21:06:23.999188,He fainted and won’t respond,vague_emergency,0.4403,0.0653,0.4549,disagreement_vague,
+2025-04-10T21:06:24.425052,My sister’s breathing is really weird,vague_emergency,0.3975,0.0814,0.4124,disagreement_vague,
+2025-04-10T21:06:24.907705,His face turned red and he can't breathe,emergency,0.4404,0.0776,0.4790,hybrid_agreement,Choking
+2025-04-10T21:06:25.365200,She’s shaking and collapsed,vague_emergency,0.3856,0.0512,0.3790,disagreement_vague,
+2025-04-10T21:06:25.733849,My friend blacked out while playing,vague_emergency,0.3142,0.0398,0.3246,disagreement_vague,
+2025-04-10T21:06:25.996325,He got burned by hot tea,vague_emergency,0.3643,0.0695,0.4209,disagreement_vague,
+2025-04-10T21:06:26.426059,He says he feels numb and can't talk,vague_emergency,0.4309,0.0673,0.4031,hybrid_agreement,
+2025-04-10T21:06:26.893424,There’s foam coming out of her mouth,vague_emergency,0.3869,0.0582,0.3112,disagreement_vague,
+2025-04-10T21:06:27.356264,She passed out in the pool,vague_emergency,0.2960,0.0515,0.4169,disagreement_vague,
+2025-04-10T21:06:27.882808,He’s shaking and his eyes rolled back,vague_emergency,0.4926,0.0602,0.3844,disagreement_vague,
+2025-04-10T21:06:28.270085,Her skin looks bluish,vague_emergency,0.4787,0.0647,0.4055,hybrid_agreement,
+2025-04-10T21:06:28.723926,He’s not moving and barely breathing,vague_emergency,0.5164,0.0942,0.4879,semantic_override,
+2025-04-10T21:06:29.192205,I hit my head and feel dizzy,vague_emergency,0.4331,0.0943,0.4934,hybrid_agreement,
+2025-04-10T21:06:29.579137,She’s choking but still coughing,emergency,0.4936,0.0882,0.4759,hybrid_agreement,Choking
+2025-04-10T21:06:30.011789,Something’s wrong with my chest,vague_emergency,0.4726,0.0487,0.5011,disagreement_vague,
+2025-04-10T21:06:30.375418,I feel off and my arm tingles,vague_emergency,0.4567,0.0542,0.3742,hybrid_agreement,
+2025-04-10T21:06:30.881142,My friend isn’t acting right,vague_emergency,0.2534,0.0289,0.2247,disagreement_vague,
+2025-04-10T21:06:31.297618,There’s pain in my lower back,vague_emergency,0.3641,0.0601,0.3568,disagreement_vague,
+2025-04-10T21:06:31.794878,I’m seeing blurry spots,vague_emergency,0.4224,0.0447,0.4262,disagreement_vague,
+2025-04-10T21:06:32.152092,He suddenly collapsed,vague_emergency,0.4618,0.0567,0.3709,hybrid_agreement,
+2025-04-10T21:06:32.460252,She says her legs are numb,vague_emergency,0.3738,0.0572,0.3747,hybrid_agreement,
+2025-04-10T21:06:32.865582,My brother is very confused,vague_emergency,0.2922,0.0418,0.2496,disagreement_vague,
+2025-04-10T21:06:33.355230,There’s pressure in my head,vague_emergency,0.5309,0.0479,0.4015,semantic_override,
+2025-04-10T21:06:33.711610,She fell and now she’s not talking,vague_emergency,0.2736,0.0395,0.3208,disagreement_vague,
+2025-04-10T21:06:34.206561,I don’t feel good and my vision is fuzzy,vague_emergency,0.5573,0.0517,0.4193,semantic_override,
+2025-04-10T21:06:34.611184,My hand feels weird and cold,vague_emergency,0.5801,0.0686,0.4606,hybrid_agreement,
+2025-04-10T21:06:35.030724,He says he’s too dizzy to move,vague_emergency,0.5192,0.0599,0.3784,semantic_override,
+2025-04-10T21:06:35.484814,I can’t seem to focus and feel off,vague_emergency,0.5161,0.0493,0.3106,hybrid_agreement,
+2025-04-10T21:06:35.925863,My legs gave out for a second,emergency,0.4129,0.0575,0.3844,hybrid_agreement,fallback
+2025-04-10T21:06:36.007031,Tell me a funny joke,non_emergency,0.7454,0.0000,0.0000,hybrid_agreement,
+2025-04-10T21:06:36.087763,What’s the weather in New York?,non_emergency,0.5873,0.0000,0.0000,hybrid_agreement,
+2025-04-10T21:06:36.188607,Where is the nearest hospital?,non_emergency,0.6479,0.0000,0.0000,tfidf_confidence_high,
+2025-04-10T21:06:36.257363,Play music for me,non_emergency,0.6118,0.0000,0.0000,hybrid_agreement,
+2025-04-10T21:06:36.325136,How many people live in Canada?,non_emergency,0.6159,0.0000,0.0000,hybrid_agreement,
+2025-04-10T21:06:36.396080,What’s the score of the game?,non_emergency,0.6513,0.0000,0.0000,hybrid_agreement,
+2025-04-10T21:06:36.479802,What is CPR?,non_emergency,0.7064,0.0000,0.0000,tfidf_confidence_high,
+2025-04-10T21:06:36.566647,How do I build a campfire?,non_emergency,0.7524,0.0000,0.0000,hybrid_agreement,
+2025-04-10T21:06:36.988961,Is it safe to drink tap water?,vague_emergency,0.1560,0.0397,0.4208,disagreement_vague,
+2025-04-10T21:06:37.043801,Who won the last football match?,non_emergency,0.6212,0.0000,0.0000,hybrid_agreement,
+2025-04-10T21:06:37.116905,asdfasdfasdf,non_emergency,0.3662,0.0000,0.0000,hybrid_agreement,
+2025-04-10T21:06:37.223472,???!! blehhhhh ###!!,non_emergency,0.3662,0.0000,0.0000,hybrid_agreement,
+2025-04-10T21:06:37.224475,abc abc abc abc,non_emergency,0.0000,0.0000,0.0000,gibberish,
+2025-04-10T21:06:37.224475,djskl!!@##@!!,non_emergency,0.0000,0.0000,0.0000,gibberish,
+2025-04-10T21:06:37.225496,😵😵😵😵😵,non_emergency,0.0000,0.0000,0.0000,gibberish,
+2025-04-10T21:06:37.548106,He’s in psychosis,vague_emergency,0.2602,0.0557,0.3087,disagreement_vague,
+2025-04-10T21:06:38.013650,I think this is a diabetic crash,vague_emergency,0.3876,0.0462,0.3728,disagreement_vague,
+2025-04-10T21:06:38.385454,We suspect a spinal cord injury,emergency,0.5851,0.0676,0.4348,hybrid_agreement,Fractures & Broken Bones
+2025-04-10T21:06:38.810997,He has no feeling in his fingers after a fall,vague_emergency,0.4695,0.0678,0.4260,disagreement_vague,
+2025-04-10T21:06:39.219486,She’s having a miscarriage,vague_emergency,0.2860,0.0408,0.3015,disagreement_vague,
+2025-04-10T21:06:39.578244,This looks like appendicitis,vague_emergency,0.4392,0.0367,0.4199,disagreement_vague,
+2025-04-10T21:06:39.952193,I think this is a heart murmur,vague_emergency,0.3570,0.0766,0.4120,disagreement_vague,
+2025-04-10T21:06:40.285630,My uncle has collapsed from low blood sugar,emergency,0.4229,0.0590,0.4016,hybrid_agreement,Fainting
+2025-04-10T21:06:40.596016,She took too many pills,vague_emergency,0.3099,0.0463,0.3338,disagreement_vague,
+2025-04-10T21:06:40.970078,He’s hallucinating and screaming,emergency,0.6465,0.0659,0.3571,tfidf_confidence_high,fallback
+2025-04-10T21:06:41.341118,My sister has really low iron and fainted,vague_emergency,0.4788,0.0607,0.4232,disagreement_vague,
+2025-04-10T21:06:41.988329,Can seizures be caused by stress?,vague_emergency,0.3681,0.0763,0.8426,disagreement_vague,
+2025-04-10T21:06:42.357523,We need help with childbirth,vague_emergency,0.2732,0.0623,0.3115,disagreement_vague,
+2025-04-10T21:06:43.047517,There’s a seizure but no shaking,vague_emergency,0.3988,0.0771,0.8697,hybrid_agreement,
+2025-04-10T21:06:43.515588,He has HIV complications,vague_emergency,0.2647,0.0406,0.2856,disagreement_vague,
+2025-04-10T21:06:43.929080,He’s coughing up a lot of blood,emergency,0.4281,0.0597,0.3946,hybrid_agreement,fallback
+2025-04-10T21:06:44.334445,I think she had a panic attack,vague_emergency,0.4445,0.0815,0.3671,hybrid_agreement,
+2025-04-10T21:06:44.698950,He’s foaming at the mouth and stiff,vague_emergency,0.4599,0.0516,0.3586,disagreement_vague,
+2025-04-10T21:06:45.104886,What should I do if someone drowns?,emergency,0.5751,0.0693,0.4548,hybrid_agreement,Drowning
+2025-04-10T21:06:45.561776,She’s unconscious but breathing,emergency,0.4831,0.0878,0.4443,hybrid_agreement,Cpr

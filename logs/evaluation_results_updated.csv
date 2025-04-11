@@ -1,0 +1,61 @@
+Input Query,Expected Intent,Predicted Intent,Intent Match,Expected Emergency,Predicted Emergency,Emergency Match,Vague Triggered,Fallback Triggered
+My leg is bleeding,emergency,non_emergency,❌,Bleeding,N/A,N/A,N/A,N/A
+He collapsed and is not breathing,emergency,emergency,✔,Cpr,Cpr,✔,✘,✘
+I have a severe burn on my hand,emergency,emergency,✔,"Burns (1St, 2Nd, 3Rd Degree)","Burns (1St, 2Nd, 3Rd Degree)",✔,✘,✘
+My baby has a high fever,emergency,emergency,✔,Fever (Adults And Children),Fever (Adults And Children),✔,✘,✘
+She fainted suddenly,emergency,non_emergency,❌,Fainting,N/A,N/A,N/A,N/A
+There’s a nail stuck in my foot,emergency,non_emergency,❌,Puncture Wounds,N/A,N/A,N/A,N/A
+I think my wrist is broken,emergency,non_emergency,❌,Fractures & Broken Bones,N/A,N/A,N/A,N/A
+He has chest pain and shortness of breath,emergency,emergency,✔,Chest Pain,Chest Pain,✔,✘,✘
+I cut my finger with a knife,emergency,emergency,✔,Bleeding,Bleeding,✔,✘,✘
+Chemical spilled on my arm and it's burning,emergency,emergency,✔,Chemical Burns,Chemical Burns,✔,✘,✘
+He was stung by a bee and can’t breathe,emergency,emergency,✔,Insect Bites And Stings,Choking,❌,✘,✘
+There’s something in my eye,emergency,emergency,✔,Eye Injuries,fallback,❌,✘,✔
+My ankle is swollen after falling,emergency,emergency,✔,Sprains & Strains,Sprains & Strains,✔,✘,✘
+I accidentally drank poison,emergency,emergency,✔,Poisoning & Ingestion,Poisoning & Ingestion,✔,✘,✘
+She’s having seizures,emergency,emergency,✔,Seizures,Seizures,✔,✘,✘
+My nose won’t stop bleeding,emergency,emergency,✔,Nosebleed,Bleeding,❌,✘,✘
+I fell and hit my head,emergency,emergency,✔,Head Injuries & Concussions,Head Injuries & Concussions,✔,✘,✘
+There’s blood coming from his ear,emergency,emergency,✔,Head Injuries & Concussions,fallback,❌,✘,✔
+My hand got burned by boiling water,emergency,non_emergency,❌,"Burns (1St, 2Nd, 3Rd Degree)",N/A,N/A,N/A,N/A
+My friend has signs of a heart attack,emergency,emergency,✔,Heart Attack,Heart Attack,✔,✘,✘
+I hurt myself,emergency,non_emergency,❌,vague,N/A,N/A,N/A,N/A
+I’m in pain,emergency,emergency,✔,vague,fallback,❌,✘,✔
+Something’s wrong,emergency,non_emergency,❌,vague,N/A,N/A,N/A,N/A
+I don’t feel good,emergency,non_emergency,❌,vague,N/A,N/A,N/A,N/A
+He’s acting strange,emergency,emergency,✔,vague,fallback,❌,✘,✔
+She looks unwell,emergency,emergency,✔,vague,fallback,❌,✘,✔
+I think something is off,emergency,non_emergency,❌,vague,N/A,N/A,N/A,N/A
+It’s serious but I’m not sure what to do,emergency,emergency,✔,vague,fallback,❌,✘,✔
+I feel weird,emergency,emergency,✔,vague,fallback,❌,✘,✔
+I’m not okay,emergency,non_emergency,❌,vague,N/A,N/A,N/A,N/A
+He’s not responding properly,emergency,emergency,✔,vague,fallback,❌,✘,✔
+I saw someone fall but don’t know how bad,emergency,emergency,✔,vague,Head Injuries & Concussions,❌,✘,✘
+She says her body aches,emergency,emergency,✔,vague,fallback,❌,✘,✔
+I feel dizzy,emergency,emergency,✔,vague,Motion Sickness,❌,✘,✘
+He can’t talk clearly,emergency,non_emergency,❌,vague,N/A,N/A,N/A,N/A
+She’s shaking a little,emergency,non_emergency,❌,vague,N/A,N/A,N/A,N/A
+"I’m scared, something is wrong",emergency,non_emergency,❌,vague,N/A,N/A,N/A,N/A
+"I don’t know what happened, but it looks bad",emergency,non_emergency,❌,vague,N/A,N/A,N/A,N/A
+He collapsed for a moment,emergency,emergency,✔,vague,fallback,❌,✘,✔
+My stomach feels strange,emergency,non_emergency,❌,vague,N/A,N/A,N/A,N/A
+Tell me a joke,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+Do you know Elon Musk?,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+Open Spotify,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+What's the weather like?,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+I love pizza,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+asdfghjkl,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+12345@#!!,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+Can you cook?,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+What’s 2 + 2?,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+I feel great today!,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+Do you want to play a game?,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+Show me a picture of a cat,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+Good morning!,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+Hello there,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+What's up?,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+Are you okay?,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+Just chilling,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+What is your name?,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+I'm happy,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
+Blah blah blah,non_emergency,non_emergency,✔,nan,N/A,N/A,N/A,N/A
