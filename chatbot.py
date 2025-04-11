@@ -145,6 +145,18 @@ class Chatbot:
                         "response": "⚠️ This seems serious, but it's not in my database. Please contact emergency services.",
                         "feedback": True
                     }
+        
+            # NEW: return correction options if not provided yet
+            if corrected is None:
+                options = sorted(self.df["Emergency Type"].unique().tolist())
+                options.append("None of the above")
+                return {
+                    "type": "correction",
+                    "response": "❌ Thanks for the feedback. What emergency were you actually referring to?",
+                    "options": options,
+                    "feedback": True
+                }
+
 
         if feedback_match == "NONE":
             return {
