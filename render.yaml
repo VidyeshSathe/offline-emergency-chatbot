@@ -1,12 +1,14 @@
-# render.yaml
-
 services:
   - type: web
     name: offline-emergency-chatbot
     env: python
-    buildCommand: ""
-    startCommand: ./start.sh
     plan: free
-    envVars:
-      - key: ENV
-        value: production
+    region: singapore
+    branch: main
+    runtime: python
+    buildCommand: >
+      curl -L -o models.zip "https://www.dropbox.com/scl/fi/sxqa3qh9unvn3etv4rwcq/models.zip?rlkey=1oqzd6ybbyd84s6hgs0gvp97y&dl=1" &&
+      unzip -o models.zip -d ./models &&
+      pip install -r requirements.txt
+    startCommand: uvicorn main_api:app --host 0.0.0.0 --port 10000
+    autoDeploy: true
