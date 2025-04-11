@@ -1,10 +1,20 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from chatbot import Chatbot
 import uvicorn
 
 # Initialize FastAPI app
 app = FastAPI()
+
+# ✅ Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # You can change "*" to your frontend domain for more security
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Load the chatbot
 bot = Chatbot(config_path="config.ini", test_mode=True)
@@ -22,4 +32,5 @@ def handle_query(query: QueryInput):
 # Run the server when executing directly
 if __name__ == "__main__":
     uvicorn.run("main_api:app", host="0.0.0.0", port=8000)
+
 
