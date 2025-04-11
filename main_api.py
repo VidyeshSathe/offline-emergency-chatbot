@@ -4,7 +4,6 @@ from pydantic import BaseModel
 from chatbot import Chatbot
 import uvicorn
 from fastapi.responses import JSONResponse
-from fastapi import Body
 from typing import Optional
 
 # Initialize FastAPI app
@@ -13,32 +12,33 @@ app = FastAPI()
 # ✅ Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # You can change "*" to your frontend domain for more security
+    allow_origins=["*"],  # Set your frontend domain for better security if needed
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Load the chatbot
+# ✅ Load the chatbot using improved unified logic
 bot = Chatbot(config_path="config.ini", test_mode=False)
 
-# Define input schema
+# 📬 Input schema for /query
 class QueryInput(BaseModel):
     input: str
 
-# Define the /query endpoint
-@app.post("/query")
-def handle_query(query: QueryInput):
-    result = bot.run_single_query(query.input)
-    return JSONResponse(content=result, media_type="application/json; charset=utf-8")
-# Feedback input model
+# 📬 Input schema for /feedback
 class FeedbackInput(BaseModel):
     input: str
     was_helpful: bool
     predicted: str
     corrected: Optional[str] = None
 
-# Define /feedback endpoint
+# 🔁 Chat query handler (now uses unified logic)
+@app.post("/query")
+def handle_query(query: QueryInput):
+    result = bot.handle_query(query.input)  # ✅ uses improved shared logic
+    return JSONResponse(content=result, media_type="application/json; charset=utf-8")
+
+# ✅ Feedback handler
 @app.post("/feedback")
 def log_user_feedback(feedback: FeedbackInput):
     bot.feedback_logger.log_feedback(
@@ -49,10 +49,9 @@ def log_user_feedback(feedback: FeedbackInput):
     )
     return {"message": "Feedback saved"}
 
-# Run the server when executing directly
+# 🏁 Run locally if executed directly
 if __name__ == "__main__":
     uvicorn.run("main_api:app", host="0.0.0.0", port=8000)
-
 
 
 
