@@ -6,38 +6,65 @@ class ResponseGenerator:
     @staticmethod
     def render(row):
         output = []
-        output.append(f"\n🚨 Emergency Detected: {row.get('Emergency Type', 'Unknown')}")
+        output.append(f"🚨 Emergency Detected: {row.get('Emergency Type', 'Unknown')}\n")
 
-        if row.get("Symptoms"):
-            output.append("\n🩺 Symptoms to Watch For:")
-            for line in row["Symptoms"].split("\n"):
-                output.append(f"- {line.strip()}")
+        # Symptoms
+        symptoms = row.get("Symptoms")
+        if symptoms:
+            output.append("🩺 Symptoms to Watch For:")
+            for line in symptoms.split("\n"):
+                line = line.strip()
+                if line:
+                    output.append(f"- {line}")
+            output.append("")
 
-        if row.get("When to Call Emergency Services"):
-            output.append("\n📞 Call Emergency Services If:")
-            for line in row["When to Call Emergency Services"].split("\n"):
-                output.append(f"- {line.strip()}")
+        # When to Call
+        when = row.get("When to Call Emergency Services")
+        if when:
+            output.append("📞 Call Emergency Services If:")
+            for line in when.split("\n"):
+                line = line.strip()
+                if line:
+                    output.append(f"- {line}")
+            output.append("")
 
-        if row.get("Immediate Actions"):
-            output.append("\n✅ Immediate First Aid Steps:")
-            for idx, step in enumerate(row["Immediate Actions"].split("\n"), 1):
-                output.append(f"{idx}. {step.strip()}")
+        # Immediate Actions
+        actions = row.get("Immediate Actions")
+        if actions:
+            output.append("✅ Immediate First Aid Steps:")
+            for i, step in enumerate(actions.split("\n"), 1):
+                step = step.strip().lstrip("0123456789. ").strip()
+                if step:
+                    output.append(f"{i}. {step}")
+            output.append("")
 
-        if row.get("Do's and Don'ts"):
-            output.append("\n⚠️ Do's and Don'ts:")
-            for line in row["Do's and Don'ts"].split("\n"):
-                output.append(f"- {line.strip()}")
+        # Do's and Don'ts
+        dos = row.get("Do's and Don'ts")
+        if dos:
+            output.append("⚠️ Do's and Don'ts:")
+            for line in dos.split("\n"):
+                line = line.strip()
+                if line:
+                    output.append(f"- {line}")
+            output.append("")
 
-        if row.get("Follow-Up Instructions"):
-            output.append("\n🔄 Follow-Up Instructions:")
-            for line in row["Follow-Up Instructions"].split("\n"):
-                output.append(f"- {line.strip()}")
+        # Follow-Up
+        follow = row.get("Follow-Up Instructions")
+        if follow:
+            output.append("🔄 Follow-Up Instructions:")
+            for line in follow.split("\n"):
+                line = line.strip()
+                if line:
+                    output.append(f"- {line}")
+            output.append("")
 
-        if row.get("Severity Level"):
-            sev = row["Severity Level"].strip().capitalize()
-            severity_emoji = "🟢 Mild" if "mild" in sev.lower() else "🟠 Moderate" if "moderate" in sev.lower() else "🔴 Severe"
-            output.append(f"\n📊 Severity Level: {severity_emoji}")
+        # Severity
+        sev = row.get("Severity Level", "").strip().lower()
+        if sev:
+            severity = "🟢 Mild" if "mild" in sev else "🟠 Moderate" if "moderate" in sev else "🔴 Severe"
+            output.append(f"📊 Severity Level: {severity}")
 
         output.append("\n📌 Stay calm and follow these steps. This information is for guidance only. Seek professional help when needed.")
+
         return "\n".join(output)
 
