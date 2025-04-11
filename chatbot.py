@@ -283,7 +283,7 @@ class Chatbot:
             }
     
         matches, spread_score = self.retrieval_engine.retrieve(user_input, self.df)
-        logging.info(f"Top match: {matches.iloc[0]['Emergency Type']} (score={top_score:.4f})")
+        
         top_score = matches.iloc[0]["Score"]
     
         fallback_threshold = float(self.config.get('fallback_threshold', 0.02))
