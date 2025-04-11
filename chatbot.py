@@ -213,16 +213,17 @@ class Chatbot:
                 "feedback": True
             }
 
-        selected = self.disambiguator.resolve(matches, user_input, auto=self.test_mode)
-        if selected is None:
-            options = matches.head(3)["Emergency Type"].tolist()
-            options.append("None of the above")
+        selected = self.disambiguator.resolve(matches, user_input, auto=not self.test_mode)
+
+        # ✅ If disambiguation is triggered, return structured object
+        if isinstance(selected, dict) and selected.get("disambiguation"):
             return {
                 "type": "disambiguation",
-                "response": "⚠️ Multiple possible emergencies detected. Please choose the best match:",
-                "options": options,
+                "response": selected["message"],
+                "options": selected["options"],
                 "feedback": True
             }
+
 
         return {
             "type": "normal",
