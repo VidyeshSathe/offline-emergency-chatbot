@@ -237,13 +237,14 @@ class Chatbot:
         result = self.intent_classifier.predict_intent(user_input)
         intent = result.intent
         reason = result.reason
-
+    
         if result.is_gibberish or intent == "non_emergency":
             return {
                 "type": "info",
-                "response": "ℹ️ Please describe a real emergency or symptom."
+                "response": "ℹ️ Please describe a real emergency or symptom.",
+                "feedback": False
             }
-
+    
         if intent == "distress":
             return {
                 "type": "distress",
@@ -252,32 +253,47 @@ class Chatbot:
                     "I'm just an offline assistant and can't provide direct help, but you are not alone.\n"
                     "Please speak with someone you trust or contact a local crisis support service.\n"
                     "If you're in danger, seek emergency help immediately."
-                )
+                ),
+                "feedback": False
             }
-
+    
+        
+        emergency_matches = self.df[self.df["Emergency Type"].str.lower() == user_input.lower()]
+        if not emergency_matches.empty:
+            row = emergency_matches.iloc[0]
+            return {
+                "type": "normal",
+                "response": self.response_generator.render(row),
+                "feedback": True
+            }
+    
         feedback_match = self.feedback_logger.find_feedback_match(user_input)
         if feedback_match == "NONE":
             return {
                 "type": "fallback",
-                "response": "⚠️ This seems serious, but I don't have relevant information in my database. Please contact emergency services."
+                "response": "⚠️ This seems serious, but I don't have relevant information in my database. Please contact emergency services.",
+                "feedback": True
             }
         elif feedback_match:
             row = self.df[self.df["Emergency Type"] == feedback_match].iloc[0]
             return {
                 "type": "normal",
-                "response": self.response_generator.render(row)
+                "response": self.response_generator.render(row),
+                "feedback": True
             }
-
+    
         matches, spread_score = self.retrieval_engine.retrieve(user_input, self.df)
+        logging.info(f"Top match: {matches.iloc[0]['Emergency Type']} (score={top_score:.4f})")
         top_score = matches.iloc[0]["Score"]
-
+    
         fallback_threshold = float(self.config.get('fallback_threshold', 0.02))
         if top_score < fallback_threshold:
             return {
                 "type": "fallback",
-                "response": "⚠️ This seems serious, but I don't have relevant information in my database. Please contact emergency services."
+                "response": "⚠️ This seems serious, but I don't have relevant information in my database. Please contact emergency services.",
+                "feedback": True
             }
-
+    
         # DISAMBIGUATION
         if reason == "hybrid_agreement" or (
             top_score > 0.7 and top_score - matches.iloc[1]["Score"] > self.disambiguator.threshold
@@ -285,26 +301,28 @@ class Chatbot:
             selected = matches.iloc[0]
             return {
                 "type": "normal",
-                "response": self.response_generator.render(selected)
+                "response": self.response_generator.render(selected),
+                "feedback": True
             }
-
+    
         # DISAMBIGUATION UI PATH
         selected = self.disambiguator.resolve(matches, user_input, auto=True)
         if selected is None:
-            # Extract top-3 options
             options = matches.head(3)['Emergency Type'].tolist()
             options.append("None of the above")
             return {
                 "type": "disambiguation",
                 "response": "⚠️ Multiple possible emergencies detected. Please choose the best match:",
-                "options": options
+                "options": options,
+                "feedback": True
             }
-
+    
         return {
             "type": "normal",
             "response": self.response_generator.render(selected),
             "feedback": True
         }
+
 
 
 
