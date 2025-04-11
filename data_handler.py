@@ -10,7 +10,7 @@ nltk.data.path.append(os.path.abspath("./nltk_data"))
 # Verify resources load correctly
 from nltk.corpus import stopwords, wordnet
 from nltk.stem import WordNetLemmatizer
-from nltk.tokenize import word_tokenize
+from nltk.tokenize import TreebankWordTokenizer  # <-- Now used directly
 
 class DataHandler:
     def __init__(self, config):
@@ -28,12 +28,10 @@ class DataHandler:
         lemmatizer = WordNetLemmatizer()
         text = text.lower()
         text = re.sub(r"[^\w\s]", " ", text)
-        from nltk.tokenize import TreebankWordTokenizer
-        tokens = TreebankWordTokenizer().tokenize(text)
-
+        tokens = TreebankWordTokenizer().tokenize(text)  # ✅ Clean, offline-safe
 
         if not tokens:
-            return ""  # Handle empty result after filtering
+            return ""
 
         tokens = [lemmatizer.lemmatize(t) for t in tokens if t.isalnum()]
         return " ".join(tokens)
