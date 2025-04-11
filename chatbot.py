@@ -107,6 +107,22 @@ class Chatbot:
             writer.writerow([datetime.now().isoformat(), user_input, intent, f"{confidence:.4f}", f"{spread_score:.4f}", f"{top_score:.4f}", reason])
 
     def handle_query(self, user_input, feedback_override=None):
+        if user_input.startswith("disambiguation:"):
+        label = user_input.split(":", 1)[1].strip()
+        match = self.df[self.df["Emergency Type"] == label]
+        if not match.empty:
+            row = match.iloc[0]
+            return {
+                "type": "normal",
+                "response": self.response_generator.render(row),
+                "feedback": True
+            }
+        else:
+            return {
+                "type": "fallback",
+                "response": "⚠️ Sorry, I couldn’t find that emergency in my database. Please try describing it again.",
+                "feedback": True
+            }
         feedback_match = self.feedback_logger.find_feedback_match(user_input)
         if feedback_override:
             corrected = feedback_override.get("corrected")
