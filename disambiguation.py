@@ -14,24 +14,23 @@ class Disambiguator:
 
     def resolve(self, matches, user_input, auto=True):
         if len(matches) < 2:
-            print("🔍 Only one match available — disambiguation skipped.")
+            logging.info("Disambiguation skipped: Only one match available.")
             return matches.iloc[0]
 
         top_score = matches.iloc[0]["Score"]
         second_score = matches.iloc[1]["Score"]
         score_gap = top_score - second_score
-
         use_top_3 = top_score < 0.7 or score_gap < self.threshold
 
         if not use_top_3:
-            print(f"✅ High confidence (score={top_score:.2f}) — auto-selected top match.")
+            logging.info(f"High confidence (score={top_score:.2f}) — auto-selected top match.")
             return matches.iloc[0]
 
-        logging.info(f"Disambiguation triggered. Score gap = {score_gap:.4f}. Showing top 3 options.")
         top3 = matches.head(3)
 
         if auto:
-            # In API mode — return None to trigger disambiguation UI on frontend
+            # In API mode, do NOT use input(), just trigger disambiguation UI
+            logging.info("Disambiguation triggered in API mode.")
             self.log_disambiguation(user_input, "API_Disambiguation",
                                     top3.iloc[0]["Emergency Type"],
                                     top3.iloc[1]["Emergency Type"] if len(top3) > 1 else "",
@@ -39,11 +38,11 @@ class Disambiguator:
                                     score_gap, top_score)
             return None
 
-        # Local/CLI fallback
+        # CLI Mode (run()) — user can select from numbered options
         print("⚠️ Multiple possible emergencies detected. Please choose the best match:")
         for i, row in top3.iterrows():
-            print(f"{i+1}. {row['Emergency Type']}")
-        print(f"{len(top3)+1}. None of these – I’ll try again if you describe it differently.")
+            print(f"{i + 1}. {row['Emergency Type']}")
+        print(f"{len(top3) + 1}. None of these – I’ll try again if you describe it differently.")
 
         choice = input(f"Select 1-{len(top3)+1}: ").strip()
         try:
