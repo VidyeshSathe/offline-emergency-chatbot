@@ -233,46 +233,79 @@ class Chatbot:
                     except:
                         print("Invalid input. Feedback not saved.")
 
-    def run_single_query(self, user_input: str) -> str:
+    def run_single_query(self, user_input: str) -> dict:
         result = self.intent_classifier.predict_intent(user_input)
         intent = result.intent
         reason = result.reason
 
         if result.is_gibberish or intent == "non_emergency":
-            return "ℹ️ Please describe a real emergency or symptom."
+            return {
+                "type": "info",
+                "response": "ℹ️ Please describe a real emergency or symptom."
+            }
 
         if intent == "distress":
-            return (
-                "🧡 It sounds like you’re in serious emotional distress.\n"
-                "I'm just an offline assistant and can't provide direct help, but you are not alone.\n"
-                "Please speak with someone you trust or contact a local crisis support service.\n"
-                "If you're in danger, seek emergency help immediately."
-            )
+            return {
+                "type": "distress",
+                "response": (
+                    "🧡 It sounds like you’re in serious emotional distress.\n"
+                    "I'm just an offline assistant and can't provide direct help, but you are not alone.\n"
+                    "Please speak with someone you trust or contact a local crisis support service.\n"
+                    "If you're in danger, seek emergency help immediately."
+                )
+            }
 
         feedback_match = self.feedback_logger.find_feedback_match(user_input)
         if feedback_match == "NONE":
-            return "⚠️ This seems serious, but I don't have relevant information in my database. Please contact emergency services."
+            return {
+                "type": "fallback",
+                "response": "⚠️ This seems serious, but I don't have relevant information in my database. Please contact emergency services."
+            }
         elif feedback_match:
             row = self.df[self.df["Emergency Type"] == feedback_match].iloc[0]
-            return self.response_generator.render(row)
+            return {
+                "type": "normal",
+                "response": self.response_generator.render(row)
+            }
 
         matches, spread_score = self.retrieval_engine.retrieve(user_input, self.df)
         top_score = matches.iloc[0]["Score"]
 
         fallback_threshold = float(self.config.get('fallback_threshold', 0.02))
         if top_score < fallback_threshold:
-            return "⚠️ This seems serious, but I don't have relevant information in my database. Please contact emergency services."
+            return {
+                "type": "fallback",
+                "response": "⚠️ This seems serious, but I don't have relevant information in my database. Please contact emergency services."
+            }
 
+        # DISAMBIGUATION
         if reason == "hybrid_agreement" or (
             top_score > 0.7 and top_score - matches.iloc[1]["Score"] > self.disambiguator.threshold
         ):
             selected = matches.iloc[0]
-        else:
-            selected = self.disambiguator.resolve(matches, user_input, auto=True)
-            if selected is None:
-                return "🧭 Could you try describing the emergency in a different way so I can better understand?"
+            return {
+                "type": "normal",
+                "response": self.response_generator.render(selected)
+            }
 
-        return self.response_generator.render(selected)
+        # DISAMBIGUATION UI PATH
+        selected = self.disambiguator.resolve(matches, user_input, auto=True)
+        if selected is None:
+            # Extract top-3 options
+            options = matches.head(3)['Emergency Type'].tolist()
+            options.append("None of the above")
+            return {
+                "type": "disambiguation",
+                "response": "⚠️ Multiple possible emergencies detected. Please choose the best match:",
+                "options": options
+            }
+
+        return {
+            "type": "normal",
+            "response": self.response_generator.render(selected),
+            "feedback": True
+        }
+
 
 
 if __name__ == "__main__":
