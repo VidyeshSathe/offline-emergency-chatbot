@@ -28,7 +28,9 @@ class DataHandler:
         lemmatizer = WordNetLemmatizer()
         text = text.lower()
         text = re.sub(r"[^\w\s]", " ", text)
-        tokens = nltk.word_tokenize(text)
+        from nltk.tokenize import TreebankWordTokenizer
+        tokens = TreebankWordTokenizer().tokenize(text)
+
 
         if not tokens:
             return ""  # Handle empty result after filtering
