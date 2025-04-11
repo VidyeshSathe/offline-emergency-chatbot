@@ -27,10 +27,12 @@ class QueryInput(BaseModel):
 @app.post("/query")
 def handle_query(query: QueryInput):
     result = bot.run_single_query(query.input)
-    return {"response": result}
+    return result
 
 # Run the server when executing directly
 if __name__ == "__main__":
     uvicorn.run("main_api:app", host="0.0.0.0", port=8000)
+
+
 
 
