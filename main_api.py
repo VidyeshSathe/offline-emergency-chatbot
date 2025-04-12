@@ -3,8 +3,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from chatbot import Chatbot
 import uvicorn
-from fastapi.responses import JSONResponse
-
 
 # Initialize FastAPI app
 app = FastAPI()
@@ -29,10 +27,9 @@ class QueryInput(BaseModel):
 @app.post("/query")
 def handle_query(query: QueryInput):
     result = bot.run_single_query(query.input)
-    return JSONResponse(
-        content=result,
-        ensure_ascii=False,     # ✅ allow proper emoji/unicode characters
-        media_type="application/json; charset=utf-8"  # ✅ explicitly set UTF-8
+    return Response(
+        content=json.dumps(result, ensure_ascii=False),
+        media_type="application/json; charset=utf-8"
     )
 
 # Run the server when executing directly
