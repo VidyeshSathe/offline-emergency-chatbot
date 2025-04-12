@@ -1,70 +1,43 @@
 class ResponseGenerator:
     @staticmethod
-    def generate(row):
-        print(ResponseGenerator.render(row))
-
-    @staticmethod
     def render(row):
-        output = []
-        output.append(f"🚨 Emergency Detected: {row.get('Emergency Type', 'Unknown')}\n")
+        response = {
+            "emergency": row.get("Emergency Type", "Unknown"),
+            "symptoms": [],
+            "call_emergency_if": [],
+            "first_aid_steps": [],
+            "dos_and_donts": [],
+            "follow_up": [],
+            "severity": "Unknown",
+            "severity_emoji": "❓",
+            "disclaimer": (
+                "📌 Stay calm and follow these steps. This information is for guidance only. "
+                "Seek professional help when needed."
+            )
+        }
 
-        # Symptoms
-        symptoms = row.get("Symptoms")
-        if symptoms:
-            output.append("🩺 Symptoms to Watch For:")
-            for line in symptoms.split("\n"):
-                line = line.strip()
-                if line:
-                    output.append(f"- {line}")
-            output.append("")
+        if row.get("Symptoms"):
+            response["symptoms"] = [line.strip() for line in row["Symptoms"].split("\n") if line.strip()]
 
-        # When to Call
-        when = row.get("When to Call Emergency Services")
-        if when:
-            output.append("📞 Call Emergency Services If:")
-            for line in when.split("\n"):
-                line = line.strip()
-                if line:
-                    output.append(f"- {line}")
-            output.append("")
+        if row.get("When to Call Emergency Services"):
+            response["call_emergency_if"] = [line.strip() for line in row["When to Call Emergency Services"].split("\n") if line.strip()]
 
-        # Immediate Actions
-        actions = row.get("Immediate Actions")
-        if actions:
-            output.append("✅ Immediate First Aid Steps:")
-            for i, step in enumerate(actions.split("\n"), 1):
-                step = step.strip().lstrip("0123456789. ").strip()
-                if step:
-                    output.append(f"{i}. {step}")
-            output.append("")
+        if row.get("Immediate Actions"):
+            response["first_aid_steps"] = [line.strip() for line in row["Immediate Actions"].split("\n") if line.strip()]
 
-        # Do's and Don'ts
-        dos = row.get("Do's and Don'ts")
-        if dos:
-            output.append("⚠️ Do's and Don'ts:")
-            for line in dos.split("\n"):
-                line = line.strip()
-                if line:
-                    output.append(f"- {line}")
-            output.append("")
+        if row.get("Do's and Don'ts"):
+            response["dos_and_donts"] = [line.strip() for line in row["Do's and Don'ts"].split("\n") if line.strip()]
 
-        # Follow-Up
-        follow = row.get("Follow-Up Instructions")
-        if follow:
-            output.append("🔄 Follow-Up Instructions:")
-            for line in follow.split("\n"):
-                line = line.strip()
-                if line:
-                    output.append(f"- {line}")
-            output.append("")
+        if row.get("Follow-Up Instructions"):
+            response["follow_up"] = [line.strip() for line in row["Follow-Up Instructions"].split("\n") if line.strip()]
 
-        # Severity
-        sev = row.get("Severity Level", "").strip().lower()
-        if sev:
-            severity = "🟢 Mild" if "mild" in sev else "🟠 Moderate" if "moderate" in sev else "🔴 Severe"
-            output.append(f"📊 Severity Level: {severity}")
+        if row.get("Severity Level"):
+            level = row["Severity Level"].strip().lower()
+            response["severity"] = level.capitalize()
+            response["severity_emoji"] = (
+                "🟢" if "mild" in level else "🟠" if "moderate" in level else "🔴" if "severe" in level else "❓"
+            )
 
-        output.append("\n📌 Stay calm and follow these steps. This information is for guidance only. Seek professional help when needed.")
+        return response
 
-        return "\n".join(output)
 
