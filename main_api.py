@@ -1,8 +1,11 @@
 from fastapi import FastAPI
+from fastapi.responses import Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from chatbot import Chatbot
 import uvicorn
+import json
+
 
 # Initialize FastAPI app
 app = FastAPI()
