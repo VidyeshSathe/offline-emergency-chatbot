@@ -1,129 +1,142 @@
-# 🚨 AI-Powered Offline Emergency Chatbot
+# 🆘 Offline Emergency Response Chatbot
 
-A mission-critical AI assistant that provides **first aid and emergency response guidance** — **entirely offline**. Designed for disaster scenarios with no internet access, the chatbot uses a hybrid AI retrieval engine and local datasets to assist users in urgent medical situations.
-
----
-
-## 🧠 What It Does
-
-- Understands emergency-related natural language input
-- Detects intent, filters out gibberish and non-emergency queries
-- Retrieves matching emergency cases using TF-IDF + SentenceTransformer models
-- Displays structured first aid steps, emergency warnings, and follow-up advice
-- Supports disambiguation and feedback correction loop
+An AI-powered emergency response assistant that works fully offline. This chatbot is capable of understanding user queries related to emergency first aid situations, classifying intent, disambiguating context, and returning relevant responses—all without requiring an internet connection once set up.
 
 ---
 
-## 💻 How It Works
+## 🚀 Features
 
-The system uses a **modular architecture** with key components:
-
-| Module | Purpose |
-|--------|---------|
-| `intent_classifier.py` | Lightweight NLP-based intent classification (LogReg + MiniLM) |
-| `retrieval_engine.py` | Hybrid TF-IDF + MiniLM-L12/L6 + BERT embedding similarity |
-| `chatbot.py` | Orchestrates everything (CLI + API logic) |
-| `disambiguation.py` | Top-3 disambiguation if input is ambiguous |
-| `feedback_logger.py` | Stores user feedback and learns from confirmed corrections |
-| `response_generator.py` | Formats structured emergency responses |
-| `main_api.py` | FastAPI-based REST API for integration with GUI/Flutter apps |
+- FastAPI-powered web API
+- Offline semantic search using MiniLM embeddings
+- Hybrid intent classification (TF-IDF + Sentence Transformers)
+- Context disambiguation and feedback logging
+- Fully local SQLite backend
+- Render-compatible deployment
 
 ---
 
-## 📦 Project Structure
+## 📁 Repository Structure
 
 ```
-.
-├── chatbot.py
-├── config.ini
-├── data_handler.py
-├── disambiguation.py
-├── feedback_logger.py
-├── intent_classifier.py
-├── main_api.py
-├── response_generator.py
-├── retrieval_engine.py
-├── requirements.txt
-├── data/
-│   ├── first_aid.db
-│   ├── user_feedback.db
-├── models/
-│   ├── MiniLM-L12-v2/
-│   ├── MiniLM-L6-v2/
-│   ├── bert-base-uncased/
-├── embeddings/
-├── vectorizers/
-├── intent_classifier/
-├── nltk_data/
-└── logs/
+offline-emergency-chatbot/
+├── chatbot.py              # Core chatbot logic
+├── main_api.py             # FastAPI app entry point
+├── config.ini              # Configuration file
+├── data/                   # Contains SQLite DB and preprocessed intent data
+├── models/                 # Folder for pre-trained embedding models (downloaded later)
+├── requirements.txt        # Python package dependencies
+├── download_models.py      # Script to download and set up required models
 ```
 
 ---
 
-## 🔌 Fully Offline Design
+## ⚙️ Step-by-Step Offline Setup Instructions (Local Use)
 
-| Component | Offline Capability |
-|----------|--------------------|
-| SQLite database | ✅ Preloaded |
-| Embedding models | ✅ Stored in `models/` |
-| NLTK resources | ✅ Loaded from `nltk_data/` |
-| SentenceTransformers | ✅ Uses local paths |
-| Pip dependencies | ✅ Supports `.whl` based installs |
+You can use either Git or download the repo manually:
 
-No internet connection is required once dependencies are installed locally.
+### 🧰 Option 1: Clone Using Git
 
----
+Make sure Git is installed on your system. You can get it from:  
+[https://git-scm.com/downloads](https://git-scm.com/downloads)
 
-## 🛠️ Installation
+Then:
 
-1. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+git clone https://github.com/VidyeshSathe/offline-emergency-chatbot.git
+cd offline-emergency-chatbot
+```
 
-2. **Prepare NLTK (offline)**:
-   - Place `punkt`, `stopwords`, `wordnet` in `./nltk_data`
-   - Add: `nltk.data.path.append('./nltk_data')` is already done in code
+### 📦 Option 2: Download ZIP and Extract
 
-3. **Run the Chatbot (CLI)**:
-   ```bash
-   python chatbot.py
-   ```
+If you don't want to use Git:
 
-4. **Start the API (Optional)**:
-   ```bash
-   uvicorn main_api:app --host 0.0.0.0 --port 8000
-   ```
+1. Go to [https://github.com/VidyeshSathe/offline-emergency-chatbot](https://github.com/VidyeshSathe/offline-emergency-chatbot)
+2. Click the green **"Code"** button → **"Download ZIP"**
+3. Extract the ZIP on your system
+4. Open a terminal in the extracted folder
 
 ---
 
-## 🧪 Testing
+### 🔧 Environment Setup
 
-- Intent classification and retrieval logic are tested on a manual suite
-- Edge cases like vague, gibberish, or out-of-database inputs are handled
-- Disambiguation fallback ensures user safety
+#### 1. Create and Activate a Python Environment (Recommended)
+
+Using conda:
+
+```bash
+conda create -n chatbot-ai python=3.10
+conda activate chatbot-ai
+```
+
+Or using venv:
+
+```bash
+python -m venv chatbot-env
+./chatbot-env/Scripts/activate  # Windows
+source chatbot-env/bin/activate  # Mac/Linux
+```
+
+#### 2. Install Required Packages
+
+```bash
+pip install -r requirements.txt
+```
+
+#### 3. Download the Model Files
+
+Model files are hosted on Dropbox and excluded from the repo to reduce size. Run the helper script:
+
+```bash
+python download_models.py
+```
+
+This will place the model in:
+```
+./models/MiniLM-L6-v2
+```
+
+#### 4. Start the API
+
+```bash
+uvicorn main_api:app --reload
+```
+
+Then go to:
+```
+http://127.0.0.1:8000/docs
+```
+to interact with the API via Swagger UI.
 
 ---
 
-## 📜 Disclaimer
+## 🌐 Optional: Use Render Deployment Instead
 
-> This tool is not a substitute for professional medical help.  
-> It provides **offline first aid information** based on predefined data.  
-> In critical situations, **always seek real emergency services**.
+### 🔗 Live Demo (Deployed on Render)
+You can test the deployed chatbot live here:
+[https://firstaidchatbot-e1478.web.app/](https://firstaidchatbot-e1478.web.app/)
+
+
+This project is already configured for deployment using [Render](https://render.com), a free cloud hosting platform.
+
+1. Fork or import this repo into your GitHub
+2. Create a new **Web Service** on Render
+3. Use the existing `render.yaml` to:
+   - Auto-install dependencies
+   - Auto-download model files via Dropbox
+   - Launch the app with `uvicorn`
+
+You’ll get a hosted URL to use/share the chatbot without needing to run it locally.
+
+---
+
+## 🧠 Notes
+
+- This chatbot is designed to run fully offline once dependencies and model files are set up
+- The same model download logic used on Render is replicated via `download_models.py`
 
 ---
 
-## 🧭 Future Plans
+## 📫 Contact
 
-- 📱 Voice + Multilingual input
-- 🌐 Satellite sync for updates
-- 🧍‍♂️ Human-in-the-loop triage review
-
----
-
-## 🔐 License
-
-This project is intended for educational and humanitarian use.  
-Please reach out before commercial use or external redistribution.
-
----
+Developed by **Vidyesh Sathe**  
+If you'd like a walkthrough or have questions, feel free to reach out!
